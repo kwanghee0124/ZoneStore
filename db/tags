@@ -1,0 +1,1333 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Add	db_impl.h	/^    void Add(const CompactionStats& c) {$/;"	f	struct:leveldb::DBImpl::CompactionStats
+Add	memtable.cc	/^void MemTable::Add(SequenceNumber s, ValueType type, const Slice& key,$/;"	f	class:leveldb::MemTable
+Add	version_set_test.cc	/^  void Add(const char* smallest, const char* largest,$/;"	f	class:leveldb::FindFileTest
+AddBoundaryInputs	version_set.cc	/^void AddBoundaryInputs(const InternalKeyComparator& icmp,$/;"	f	namespace:leveldb
+AddBoundaryInputsTest	version_set_test.cc	/^  AddBoundaryInputsTest() : icmp_(BytewiseComparator()) {}$/;"	f	class:leveldb::AddBoundaryInputsTest
+AddBoundaryInputsTest	version_set_test.cc	/^class AddBoundaryInputsTest {$/;"	c	namespace:leveldb	file:
+AddFile	version_edit.h	/^  void AddFile(int level, uint64_t file, uint64_t file_size,$/;"	f	class:leveldb::VersionEdit
+AddInputDeletions	version_set.cc	/^void Compaction::AddInputDeletions(VersionEdit* edit) {$/;"	f	class:leveldb::Compaction
+AddIterators	version_set.cc	/^void Version::AddIterators(const ReadOptions& options,$/;"	f	class:leveldb::Version
+AddLiveFiles	version_set.cc	/^void VersionSet::AddLiveFiles(std::set<uint64_t>* live) {$/;"	f	class:leveldb::VersionSet
+AddRecord	log_writer.cc	/^Status Writer::AddRecord(const Slice& slice) {$/;"	f	class:leveldb::log::Writer
+AfterFile	version_set.cc	/^static bool AfterFile(const Comparator* ucmp, const Slice* user_key,$/;"	f	namespace:leveldb
+AllEntriesFor	db_test.cc	/^  std::string AllEntriesFor(const Slice& user_key) {$/;"	f	class:leveldb::DBTest
+Append	fault_injection_test.cc	/^Status TestWritableFile::Append(const Slice& data) {$/;"	f	class:leveldb::TestWritableFile
+Append	write_batch.cc	/^void WriteBatch::Append(const WriteBatch& source) {$/;"	f	class:leveldb::WriteBatch
+Append	write_batch.cc	/^void WriteBatchInternal::Append(WriteBatch* dst, const WriteBatch* src) {$/;"	f	class:leveldb::WriteBatchInternal
+AppendInternalKey	dbformat.cc	/^void AppendInternalKey(std::string* result, const ParsedInternalKey& key) {$/;"	f	namespace:leveldb
+AppendVersion	version_set.cc	/^void VersionSet::AppendVersion(Version* v) {$/;"	f	class:leveldb::VersionSet
+Apply	version_set.cc	/^  void Apply(VersionEdit* edit) {$/;"	f	class:leveldb::VersionSet::Builder
+ApproximateMemoryUsage	memtable.cc	/^size_t MemTable::ApproximateMemoryUsage() { return arena_.MemoryUsage(); }$/;"	f	class:leveldb::MemTable
+ApproximateOffsetOf	version_set.cc	/^uint64_t VersionSet::ApproximateOffsetOf(Version* v, const InternalKey& ikey) {$/;"	f	class:leveldb::VersionSet
+ApproximateSize	write_batch.cc	/^size_t WriteBatch::ApproximateSize() const { return rep_.size(); }$/;"	f	class:leveldb::WriteBatch
+ArchiveFile	repair.cc	/^  void ArchiveFile(const std::string& fname) {$/;"	f	class:leveldb::__anon7::Repairer	file:
+AtomicCounter	db_test.cc	/^  AtomicCounter() : count_(0) {}$/;"	f	class:leveldb::__anon11::AtomicCounter
+AtomicCounter	db_test.cc	/^class AtomicCounter {$/;"	c	namespace:leveldb::__anon11	file:
+AutoCompactTest	autocompact_test.cc	/^  AutoCompactTest() {$/;"	f	class:leveldb::AutoCompactTest
+AutoCompactTest	autocompact_test.cc	/^class AutoCompactTest {$/;"	c	namespace:leveldb	file:
+BGWork	db_impl.cc	/^void DBImpl::BGWork(void* db) {$/;"	f	class:leveldb::DBImpl
+BM_LogAndApply	db_test.cc	/^void BM_LogAndApply(int iters, int num_base_files) {$/;"	f	namespace:leveldb
+BackgroundCall	db_impl.cc	/^void DBImpl::BackgroundCall() {$/;"	f	class:leveldb::DBImpl
+BackgroundCompaction	db_impl.cc	/^void DBImpl::BackgroundCompaction() {$/;"	f	class:leveldb::DBImpl
+BeforeFile	version_set.cc	/^static bool BeforeFile(const Comparator* ucmp, const Slice* user_key,$/;"	f	namespace:leveldb
+Between	db_test.cc	/^static bool Between(uint64_t val, uint64_t low, uint64_t high) {$/;"	f	namespace:leveldb
+BigString	log_test.cc	/^static std::string BigString(const std::string& partial_string, size_t n) {$/;"	f	namespace:leveldb::log
+Build	corruption_test.cc	/^  void Build(int n) {$/;"	f	class:leveldb::CorruptionTest
+Build	fault_injection_test.cc	/^  void Build(int start_idx, int num_vals) {$/;"	f	class:leveldb::FaultInjectionTest
+BuildBatchGroup	db_impl.cc	/^WriteBatch* DBImpl::BuildBatchGroup(Writer** last_writer) {$/;"	f	class:leveldb::DBImpl
+BuildTable	builder.cc	/^Status BuildTable(const std::string& dbname, Env* env, const Options& options,$/;"	f	namespace:leveldb
+Builder	version_set.cc	/^  Builder(VersionSet* vset, Version* base) : vset_(vset), base_(base) {$/;"	f	class:leveldb::VersionSet::Builder
+Builder	version_set.cc	/^class VersionSet::Builder {$/;"	c	class:leveldb::VersionSet	file:
+BySmallestKey	version_set.cc	/^  struct BySmallestKey {$/;"	s	class:leveldb::VersionSet::Builder	file:
+ByteSize	write_batch_internal.h	/^  static size_t ByteSize(const WriteBatch* batch) { return batch->rep_.size(); }$/;"	f	class:leveldb::WriteBatchInternal
+CanAppend	recovery_test.cc	/^  bool CanAppend() {$/;"	f	class:leveldb::RecoveryTest
+ChangeOptions	db_test.cc	/^  bool ChangeOptions() {$/;"	f	class:leveldb::DBTest
+Check	corruption_test.cc	/^  void Check(int min_expected, int max_expected) {$/;"	f	class:leveldb::CorruptionTest
+CheckCondition	c_test.c	25;"	d	file:
+CheckDel	c_test.c	/^static void CheckDel(void* ptr, const char* k, size_t klen) {$/;"	f	file:
+CheckEqual	c_test.c	/^static void CheckEqual(const char* expected, const char* v, size_t n) {$/;"	f	file:
+CheckGet	c_test.c	/^static void CheckGet($/;"	f	file:
+CheckInitialOffsetRecord	log_test.cc	/^  void CheckInitialOffsetRecord(uint64_t initial_offset,$/;"	f	class:leveldb::log::LogTest
+CheckIter	c_test.c	/^static void CheckIter(leveldb_iterator_t* iter,$/;"	f	file:
+CheckNoError	c_test.c	19;"	d	file:
+CheckOffsetPastEndReturnsNoRecords	log_test.cc	/^  void CheckOffsetPastEndReturnsNoRecords(uint64_t offset_past_end) {$/;"	f	class:leveldb::log::LogTest
+CheckPut	c_test.c	/^static void CheckPut(void* ptr,$/;"	f	file:
+CleanupCompaction	db_impl.cc	/^void DBImpl::CleanupCompaction(CompactionState* compact) {$/;"	f	class:leveldb::DBImpl
+CleanupIteratorState	db_impl.cc	/^static void CleanupIteratorState(void* arg1, void* arg2) {$/;"	f	namespace:leveldb::__anon1
+Clear	dbformat.h	/^  void Clear() { rep_.clear(); }$/;"	f	class:leveldb::InternalKey
+Clear	version_edit.cc	/^void VersionEdit::Clear() {$/;"	f	class:leveldb::VersionEdit
+Clear	write_batch.cc	/^void WriteBatch::Clear() {$/;"	f	class:leveldb::WriteBatch
+ClearSavedValue	db_iter.cc	/^  inline void ClearSavedValue() {$/;"	f	class:leveldb::__anon8::DBIter	file:
+ClipToRange	db_impl.cc	/^static void ClipToRange(T* ptr, V minvalue, V maxvalue) {$/;"	f	namespace:leveldb
+Close	db_test.cc	/^  void Close() {$/;"	f	class:leveldb::DBTest
+Close	fault_injection_test.cc	/^Status TestWritableFile::Close() {$/;"	f	class:leveldb::TestWritableFile
+Close	recovery_test.cc	/^  void Close() {$/;"	f	class:leveldb::RecoveryTest
+CloseDB	fault_injection_test.cc	/^  void CloseDB() {$/;"	f	class:leveldb::FaultInjectionTest
+CmpCompare	c_test.c	/^static int CmpCompare(void* arg, const char* a, size_t alen,$/;"	f	file:
+CmpDestroy	c_test.c	/^static void CmpDestroy(void* arg) { }$/;"	f	file:
+CmpName	c_test.c	/^static const char* CmpName(void* arg) {$/;"	f	file:
+Compact	db_test.cc	/^  void Compact(const Slice& start, const Slice& limit) {$/;"	f	class:leveldb::DBTest
+CompactMemTable	db_impl.cc	/^void DBImpl::CompactMemTable() {$/;"	f	class:leveldb::DBImpl
+CompactMemTable	recovery_test.cc	/^  void CompactMemTable() { dbfull()->TEST_CompactMemTable(); }$/;"	f	class:leveldb::RecoveryTest
+CompactRange	db_impl.cc	/^void DBImpl::CompactRange(const Slice* begin, const Slice* end) {$/;"	f	class:leveldb::DBImpl
+CompactRange	version_set.cc	/^Compaction* VersionSet::CompactRange(int level, const InternalKey* begin,$/;"	f	class:leveldb::VersionSet
+Compaction	version_set.cc	/^Compaction::Compaction(const Options* options, int level)$/;"	f	class:leveldb::Compaction
+Compaction	version_set.h	/^class Compaction {$/;"	c	namespace:leveldb
+CompactionState	db_impl.cc	/^  explicit CompactionState(Compaction* c)$/;"	f	struct:leveldb::DBImpl::CompactionState
+CompactionState	db_impl.cc	/^struct DBImpl::CompactionState {$/;"	s	class:leveldb::DBImpl	file:
+CompactionStats	db_impl.h	/^    CompactionStats() : micros(0), bytes_read(0), bytes_written(0) {}$/;"	f	struct:leveldb::DBImpl::CompactionStats
+CompactionStats	db_impl.h	/^  struct CompactionStats {$/;"	s	class:leveldb::DBImpl
+Comparator	skiplist_test.cc	/^struct Comparator {$/;"	s	namespace:leveldb	file:
+Compare	dbformat.cc	/^int InternalKeyComparator::Compare(const Slice& akey, const Slice& bkey) const {$/;"	f	class:leveldb::InternalKeyComparator
+Compare	dbformat.h	/^inline int InternalKeyComparator::Compare(const InternalKey& a,$/;"	f	class:leveldb::InternalKeyComparator
+CompareIterators	db_test.cc	/^static bool CompareIterators(int step, DB* model, DB* db,$/;"	f	namespace:leveldb
+ConcurrentReader	skiplist_test.cc	/^static void ConcurrentReader(void* arg) {$/;"	f	namespace:leveldb
+ConcurrentTest	skiplist_test.cc	/^  ConcurrentTest() : list_(Comparator(), &arena_) {}$/;"	f	class:leveldb::ConcurrentTest
+ConcurrentTest	skiplist_test.cc	/^class ConcurrentTest {$/;"	c	namespace:leveldb	file:
+Contains	skiplist.h	/^bool SkipList<Key, Comparator>::Contains(const Key& key) const {$/;"	f	class:leveldb::SkipList
+Contents	db_test.cc	/^  std::string Contents() {$/;"	f	class:leveldb::DBTest
+Contents	write_batch_internal.h	/^  static Slice Contents(const WriteBatch* batch) { return Slice(batch->rep_); }$/;"	f	class:leveldb::WriteBatchInternal
+ConvertLogFilesToTables	repair.cc	/^  void ConvertLogFilesToTables() {$/;"	f	class:leveldb::__anon7::Repairer	file:
+ConvertLogToTable	repair.cc	/^  Status ConvertLogToTable(uint64_t log) {$/;"	f	class:leveldb::__anon7::Repairer	file:
+CopyString	c.cc	/^static char* CopyString(const std::string& str) {$/;"	f	file:
+Corrupt	corruption_test.cc	/^  void Corrupt(FileType filetype, int offset, int bytes_to_corrupt) {$/;"	f	class:leveldb::CorruptionTest
+CorruptionReporter	dumpfile.cc	/^class CorruptionReporter : public log::Reader::Reporter {$/;"	c	namespace:leveldb::__anon5	file:
+CorruptionTest	corruption_test.cc	/^  CorruptionTest()$/;"	f	class:leveldb::CorruptionTest
+CorruptionTest	corruption_test.cc	/^class CorruptionTest {$/;"	c	namespace:leveldb	file:
+Count	write_batch.cc	/^int WriteBatchInternal::Count(const WriteBatch* b) {$/;"	f	class:leveldb::WriteBatchInternal
+CountFiles	db_test.cc	/^  int CountFiles() {$/;"	f	class:leveldb::DBTest
+CreateFileMetaData	version_set_test.cc	/^  FileMetaData* CreateFileMetaData(uint64_t number, InternalKey smallest,$/;"	f	class:leveldb::AddBoundaryInputsTest
+CreateFilter	dbformat.cc	/^void InternalFilterPolicy::CreateFilter(const Slice* keys, int n,$/;"	f	class:leveldb::InternalFilterPolicy
+CurrentFileName	filename.cc	/^std::string CurrentFileName(const std::string& dbname) {$/;"	f	namespace:leveldb
+CurrentOptions	db_test.cc	/^  Options CurrentOptions() {$/;"	f	class:leveldb::DBTest
+DBImpl	db_impl.cc	/^DBImpl::DBImpl(const Options& raw_options, const std::string& dbname)$/;"	f	class:leveldb::DBImpl
+DBImpl	db_impl.h	/^class DBImpl : public DB {$/;"	c	namespace:leveldb
+DBIter	db_iter.cc	/^  DBIter(DBImpl* db, const Comparator* cmp, Iterator* iter, SequenceNumber s,$/;"	f	class:leveldb::__anon8::DBIter
+DBIter	db_iter.cc	/^class DBIter : public Iterator {$/;"	c	namespace:leveldb::__anon8	file:
+DBTest	db_test.cc	/^  DBTest() : env_(new SpecialEnv(Env::Default())), option_config_(kDefault) {$/;"	f	class:leveldb::DBTest
+DBTest	db_test.cc	/^class DBTest {$/;"	c	namespace:leveldb	file:
+DONE	skiplist_test.cc	/^  enum ReaderState { STARTING, RUNNING, DONE };$/;"	e	enum:leveldb::TestState::ReaderState	file:
+DebugString	dbformat.cc	/^std::string InternalKey::DebugString() const {$/;"	f	class:leveldb::InternalKey
+DebugString	dbformat.cc	/^std::string ParsedInternalKey::DebugString() const {$/;"	f	class:leveldb::ParsedInternalKey
+DebugString	version_edit.cc	/^std::string VersionEdit::DebugString() const {$/;"	f	class:leveldb::VersionEdit
+DebugString	version_set.cc	/^std::string Version::DebugString() const {$/;"	f	class:leveldb::Version
+DecodeFrom	dbformat.h	/^  bool DecodeFrom(const Slice& s) {$/;"	f	class:leveldb::InternalKey
+DecodeFrom	version_edit.cc	/^Status VersionEdit::DecodeFrom(const Slice& src) {$/;"	f	class:leveldb::VersionEdit
+DelayMilliseconds	db_test.cc	/^void DelayMilliseconds(int millis) {$/;"	f	namespace:leveldb::__anon11
+Delete	db_impl.cc	/^Status DB::Delete(const WriteOptions& opt, const Slice& key) {$/;"	f	class:leveldb::DB
+Delete	db_impl.cc	/^Status DBImpl::Delete(const WriteOptions& options, const Slice& key) {$/;"	f	class:leveldb::DBImpl
+Delete	db_test.cc	/^  Status Delete(const std::string& k) { return db_->Delete(WriteOptions(), k); }$/;"	f	class:leveldb::DBTest
+Delete	snapshot.h	/^  void Delete(const SnapshotImpl* snapshot) {$/;"	f	class:leveldb::SnapshotList
+Delete	write_batch.cc	/^void WriteBatch::Delete(const Slice& key) {$/;"	f	class:leveldb::WriteBatch
+DeleteAllData	fault_injection_test.cc	/^  void DeleteAllData() {$/;"	f	class:leveldb::FaultInjectionTest
+DeleteAnSSTFile	db_test.cc	/^  bool DeleteAnSSTFile() {$/;"	f	class:leveldb::DBTest
+DeleteEntry	table_cache.cc	/^static void DeleteEntry(const Slice& key, void* value) {$/;"	f	namespace:leveldb
+DeleteFile	fault_injection_test.cc	/^Status FaultInjectionTestEnv::DeleteFile(const std::string& f) {$/;"	f	class:leveldb::FaultInjectionTestEnv
+DeleteFile	version_edit.h	/^  void DeleteFile(int level, uint64_t file) {$/;"	f	class:leveldb::VersionEdit
+DeleteFilesCreatedAfterLastDirSync	fault_injection_test.cc	/^Status FaultInjectionTestEnv::DeleteFilesCreatedAfterLastDirSync() {$/;"	f	class:leveldb::FaultInjectionTestEnv
+DeleteLogFiles	recovery_test.cc	/^  size_t DeleteLogFiles() {$/;"	f	class:leveldb::RecoveryTest
+DeleteManifestFile	recovery_test.cc	/^  void DeleteManifestFile() { ASSERT_OK(env_->DeleteFile(ManifestFileName())); }$/;"	f	class:leveldb::RecoveryTest
+DeleteObsoleteFiles	db_impl.cc	/^void DBImpl::DeleteObsoleteFiles() {$/;"	f	class:leveldb::DBImpl
+DeletedFileSet	version_edit.h	/^  typedef std::set<std::pair<int, uint64_t>> DeletedFileSet;$/;"	t	class:leveldb::VersionEdit
+DescriptorFileName	filename.cc	/^std::string DescriptorFileName(const std::string& dbname, uint64_t number) {$/;"	f	namespace:leveldb
+DestroyAndReopen	db_test.cc	/^  void DestroyAndReopen(Options* options = nullptr) {$/;"	f	class:leveldb::DBTest
+DestroyDB	db_impl.cc	/^Status DestroyDB(const std::string& dbname, const Options& options) {$/;"	f	namespace:leveldb
+DirWasSynced	fault_injection_test.cc	/^void FaultInjectionTestEnv::DirWasSynced() {$/;"	f	class:leveldb::FaultInjectionTestEnv
+Direction	db_iter.cc	/^  enum Direction { kForward, kReverse };$/;"	g	class:leveldb::__anon8::DBIter	file:
+DoCompactionWork	db_impl.cc	/^Status DBImpl::DoCompactionWork(CompactionState* compact) {$/;"	f	class:leveldb::DBImpl
+DoReads	autocompact_test.cc	/^void AutoCompactTest::DoReads(int n) {$/;"	f	class:leveldb::AutoCompactTest
+DoTest	fault_injection_test.cc	/^  void DoTest() {$/;"	f	class:leveldb::FaultInjectionTest
+DropUnsyncedData	fault_injection_test.cc	/^Status FileState::DropUnsyncedData() const {$/;"	f	class:leveldb::FileState
+DropUnsyncedFileData	fault_injection_test.cc	/^Status FaultInjectionTestEnv::DropUnsyncedFileData() {$/;"	f	class:leveldb::FaultInjectionTestEnv
+DroppedBytes	log_test.cc	/^  size_t DroppedBytes() const { return report_.dropped_bytes_; }$/;"	f	class:leveldb::log::LogTest
+DumpDescriptor	dumpfile.cc	/^Status DumpDescriptor(Env* env, const std::string& fname, WritableFile* dst) {$/;"	f	namespace:leveldb::__anon5
+DumpFile	dumpfile.cc	/^Status DumpFile(Env* env, const std::string& fname, WritableFile* dst) {$/;"	f	namespace:leveldb
+DumpFileCounts	db_test.cc	/^  void DumpFileCounts(const char* label) {$/;"	f	class:leveldb::DBTest
+DumpLog	dumpfile.cc	/^Status DumpLog(Env* env, const std::string& fname, WritableFile* dst) {$/;"	f	namespace:leveldb::__anon5
+DumpSSTableList	db_test.cc	/^  std::string DumpSSTableList() {$/;"	f	class:leveldb::DBTest
+DumpTable	dumpfile.cc	/^Status DumpTable(Env* env, const std::string& fname, WritableFile* dst) {$/;"	f	namespace:leveldb::__anon5
+EmitPhysicalRecord	log_writer.cc	/^Status Writer::EmitPhysicalRecord(RecordType t, const char* ptr,$/;"	f	class:leveldb::log::Writer
+Encode	dbformat.h	/^  Slice Encode() const {$/;"	f	class:leveldb::InternalKey
+EncodeKey	memtable.cc	/^static const char* EncodeKey(std::string* scratch, const Slice& target) {$/;"	f	namespace:leveldb
+EncodeTo	version_edit.cc	/^void VersionEdit::EncodeTo(std::string* dst) const {$/;"	f	class:leveldb::VersionEdit
+Equal	skiplist.h	/^  bool Equal(const Key& a, const Key& b) const { return (compare_(a, b) == 0); }$/;"	f	class:leveldb::SkipList
+Evict	table_cache.cc	/^void TableCache::Evict(uint64_t file_number) {$/;"	f	class:leveldb::TableCache
+ExpandedCompactionByteSizeLimit	version_set.cc	/^static int64_t ExpandedCompactionByteSizeLimit(const Options* options) {$/;"	f	namespace:leveldb
+ExpectedVerifResult	fault_injection_test.cc	/^  enum ExpectedVerifResult { VAL_EXPECT_NO_ERROR, VAL_EXPECT_ERROR };$/;"	g	class:leveldb::FaultInjectionTest	file:
+ExtractMetaData	repair.cc	/^  void ExtractMetaData() {$/;"	f	class:leveldb::__anon7::Repairer	file:
+ExtractUserKey	dbformat.h	/^inline Slice ExtractUserKey(const Slice& internal_key) {$/;"	f	namespace:leveldb
+FaultInjectionTest	fault_injection_test.cc	/^  FaultInjectionTest()$/;"	f	class:leveldb::FaultInjectionTest
+FaultInjectionTest	fault_injection_test.cc	/^class FaultInjectionTest {$/;"	c	namespace:leveldb	file:
+FaultInjectionTestEnv	fault_injection_test.cc	/^  FaultInjectionTestEnv()$/;"	f	class:leveldb::FaultInjectionTestEnv
+FaultInjectionTestEnv	fault_injection_test.cc	/^class FaultInjectionTestEnv : public EnvWrapper {$/;"	c	namespace:leveldb	file:
+FileMetaData	version_edit.h	/^  FileMetaData() : refs(0), allowed_seeks(1 << 30), file_size(0) {}$/;"	f	struct:leveldb::FileMetaData
+FileMetaData	version_edit.h	/^struct FileMetaData {$/;"	s	namespace:leveldb
+FileNameTest	filename_test.cc	/^class FileNameTest {};$/;"	c	namespace:leveldb	file:
+FileSet	version_set.cc	/^  typedef std::set<FileMetaData*, BySmallestKey> FileSet;$/;"	t	class:leveldb::VersionSet::Builder	file:
+FileSize	recovery_test.cc	/^  uint64_t FileSize(const std::string& fname) {$/;"	f	class:leveldb::RecoveryTest
+FileState	fault_injection_test.cc	/^  FileState() : pos_(-1), pos_at_last_sync_(-1), pos_at_last_flush_(-1) {}$/;"	f	struct:leveldb::__anon10::FileState
+FileState	fault_injection_test.cc	/^  FileState(const std::string& filename)$/;"	f	struct:leveldb::__anon10::FileState
+FileState	fault_injection_test.cc	/^struct FileState {$/;"	s	namespace:leveldb::__anon10	file:
+FileType	filename.h	/^enum FileType {$/;"	g	namespace:leveldb
+FilesPerLevel	db_test.cc	/^  std::string FilesPerLevel() {$/;"	f	class:leveldb::DBTest
+FillLevels	db_test.cc	/^  void FillLevels(const std::string& smallest, const std::string& largest) {$/;"	f	class:leveldb::DBTest
+FilterCreate	c_test.c	/^static char* FilterCreate($/;"	f	file:
+FilterDestroy	c_test.c	/^static void FilterDestroy(void* arg) { }$/;"	f	file:
+FilterKeyMatch	c_test.c	/^uint8_t FilterKeyMatch(void* arg, const char* key, size_t length,$/;"	f
+FilterName	c_test.c	/^static const char* FilterName(void* arg) {$/;"	f	file:
+Finalize	version_set.cc	/^void VersionSet::Finalize(Version* v) {$/;"	f	class:leveldb::VersionSet
+Find	version_set_test.cc	/^  int Find(const char* key) {$/;"	f	class:leveldb::FindFileTest
+FindFile	version_set.cc	/^int FindFile(const InternalKeyComparator& icmp,$/;"	f	namespace:leveldb
+FindFileTest	version_set_test.cc	/^  FindFileTest() : disjoint_sorted_files_(true) {}$/;"	f	class:leveldb::FindFileTest
+FindFileTest	version_set_test.cc	/^class FindFileTest {$/;"	c	namespace:leveldb	file:
+FindFiles	repair.cc	/^  Status FindFiles() {$/;"	f	class:leveldb::__anon7::Repairer	file:
+FindGreaterOrEqual	skiplist.h	/^SkipList<Key, Comparator>::FindGreaterOrEqual(const Key& key,$/;"	f	class:leveldb::SkipList
+FindLargestKey	version_set.cc	/^bool FindLargestKey(const InternalKeyComparator& icmp,$/;"	f	namespace:leveldb
+FindLast	skiplist.h	/^typename SkipList<Key, Comparator>::Node* SkipList<Key, Comparator>::FindLast()$/;"	f	class:leveldb::SkipList
+FindLessThan	skiplist.h	/^SkipList<Key, Comparator>::FindLessThan(const Key& key) const {$/;"	f	class:leveldb::SkipList
+FindNextUserEntry	db_iter.cc	/^void DBIter::FindNextUserEntry(bool skipping, std::string* skip) {$/;"	f	class:leveldb::__anon8::DBIter
+FindPrevUserEntry	db_iter.cc	/^void DBIter::FindPrevUserEntry() {$/;"	f	class:leveldb::__anon8::DBIter
+FindShortSuccessor	dbformat.cc	/^void InternalKeyComparator::FindShortSuccessor(std::string* key) const {$/;"	f	class:leveldb::InternalKeyComparator
+FindShortestSeparator	dbformat.cc	/^void InternalKeyComparator::FindShortestSeparator(std::string* start,$/;"	f	class:leveldb::InternalKeyComparator
+FindSmallestBoundaryFile	version_set.cc	/^FileMetaData* FindSmallestBoundaryFile($/;"	f	namespace:leveldb
+FindTable	table_cache.cc	/^Status TableCache::FindTable(uint64_t file_number, uint64_t file_size,$/;"	f	class:leveldb::TableCache
+FinishCompactionOutputFile	db_impl.cc	/^Status DBImpl::FinishCompactionOutputFile(CompactionState* compact,$/;"	f	class:leveldb::DBImpl
+FirstLogFile	recovery_test.cc	/^  uint64_t FirstLogFile() { return GetFiles(kLogFile)[0]; }$/;"	f	class:leveldb::RecoveryTest
+FixChecksum	log_test.cc	/^  void FixChecksum(int header_offset, int len) {$/;"	f	class:leveldb::log::LogTest
+Flush	fault_injection_test.cc	/^Status TestWritableFile::Flush() {$/;"	f	class:leveldb::TestWritableFile
+ForEachOverlapping	version_set.cc	/^void Version::ForEachOverlapping(Slice user_key, Slice internal_key, void* arg,$/;"	f	class:leveldb::Version
+ForceError	log_test.cc	/^  void ForceError() { source_.force_error_ = true; }$/;"	f	class:leveldb::log::LogTest
+FormatTest	dbformat_test.cc	/^class FormatTest {};$/;"	c	namespace:leveldb	file:
+Free	c_test.c	/^static void Free(char** ptr) {$/;"	f	file:
+Get	db_impl.cc	/^Status DBImpl::Get(const ReadOptions& options, const Slice& key,$/;"	f	class:leveldb::DBImpl
+Get	db_test.cc	/^  std::string Get(const std::string& k, const Snapshot* snapshot = nullptr) {$/;"	f	class:leveldb::DBTest
+Get	memtable.cc	/^bool MemTable::Get(const LookupKey& key, std::string* value, Status* s) {$/;"	f	class:leveldb::MemTable
+Get	recovery_test.cc	/^  std::string Get(const std::string& k, const Snapshot* snapshot = nullptr) {$/;"	f	class:leveldb::RecoveryTest
+Get	skiplist_test.cc	/^    int Get(int k) { return generation[k].load(std::memory_order_acquire); }$/;"	f	struct:leveldb::ConcurrentTest::State
+Get	table_cache.cc	/^Status TableCache::Get(const ReadOptions& options, uint64_t file_number,$/;"	f	class:leveldb::TableCache
+Get	version_set.cc	/^Status Version::Get(const ReadOptions& options, const LookupKey& k,$/;"	f	class:leveldb::Version
+GetApproximateSizes	db_impl.cc	/^void DBImpl::GetApproximateSizes(const Range* range, int n, uint64_t* sizes) {$/;"	f	class:leveldb::DBImpl
+GetDirName	fault_injection_test.cc	/^static std::string GetDirName(const std::string& filename) {$/;"	f	namespace:leveldb::__anon10
+GetFileIterator	version_set.cc	/^static Iterator* GetFileIterator(void* arg, const ReadOptions& options,$/;"	f	namespace:leveldb
+GetFiles	recovery_test.cc	/^  std::vector<uint64_t> GetFiles(FileType t) {$/;"	f	class:leveldb::RecoveryTest
+GetInternalKey	version_edit.cc	/^static bool GetInternalKey(Slice* input, InternalKey* dst) {$/;"	f	namespace:leveldb
+GetLengthPrefixedSlice	memtable.cc	/^static Slice GetLengthPrefixedSlice(const char* data) {$/;"	f	namespace:leveldb
+GetLevel	version_edit.cc	/^static bool GetLevel(Slice* input, int* level) {$/;"	f	namespace:leveldb
+GetMaxHeight	skiplist.h	/^  inline int GetMaxHeight() const {$/;"	f	class:leveldb::SkipList
+GetOverlappingInputs	version_set.cc	/^void Version::GetOverlappingInputs(int level, const InternalKey* begin,$/;"	f	class:leveldb::Version
+GetProperty	db_impl.cc	/^bool DBImpl::GetProperty(const Slice& property, std::string* value) {$/;"	f	class:leveldb::DBImpl
+GetRange	version_set.cc	/^void VersionSet::GetRange(const std::vector<FileMetaData*>& inputs,$/;"	f	class:leveldb::VersionSet
+GetRange2	version_set.cc	/^void VersionSet::GetRange2(const std::vector<FileMetaData*>& inputs1,$/;"	f	class:leveldb::VersionSet
+GetSnapshot	db_impl.cc	/^const Snapshot* DBImpl::GetSnapshot() {$/;"	f	class:leveldb::DBImpl
+GetStats	version_set.h	/^  struct GetStats {$/;"	s	class:leveldb::Version
+GuessType	dumpfile.cc	/^bool GuessType(const std::string& fname, FileType* type) {$/;"	f	namespace:leveldb::__anon5
+HandleDumpCommand	leveldbutil.cc	/^bool HandleDumpCommand(Env* env, char** files, int num) {$/;"	f	namespace:leveldb::__anon9
+HashNumbers	skiplist_test.cc	/^  static uint64_t HashNumbers(uint64_t k, uint64_t g) {$/;"	f	class:leveldb::ConcurrentTest	file:
+IKey	dbformat_test.cc	/^static std::string IKey(const std::string& user_key, uint64_t seq,$/;"	f	namespace:leveldb
+Increment	db_test.cc	/^  void Increment() { IncrementBy(1); }$/;"	f	class:leveldb::__anon11::AtomicCounter
+IncrementByte	log_test.cc	/^  void IncrementByte(int offset, int delta) {$/;"	f	class:leveldb::log::LogTest
+InfoLogFileName	filename.cc	/^std::string InfoLogFileName(const std::string& dbname) {$/;"	f	namespace:leveldb
+InitTypeCrc	log_writer.cc	/^static void InitTypeCrc(uint32_t* type_crc) {$/;"	f	namespace:leveldb::log
+Insert	skiplist.h	/^void SkipList<Key, Comparator>::Insert(const Key& key) {$/;"	f	class:leveldb::SkipList
+InsertInto	write_batch.cc	/^Status WriteBatchInternal::InsertInto(const WriteBatch* b, MemTable* memtable) {$/;"	f	class:leveldb::WriteBatchInternal
+InstallCompactionResults	db_impl.cc	/^Status DBImpl::InstallCompactionResults(CompactionState* compact) {$/;"	f	class:leveldb::DBImpl
+InternalFilterPolicy	dbformat.h	/^  explicit InternalFilterPolicy(const FilterPolicy* p) : user_policy_(p) {}$/;"	f	class:leveldb::InternalFilterPolicy
+InternalFilterPolicy	dbformat.h	/^class InternalFilterPolicy : public FilterPolicy {$/;"	c	namespace:leveldb
+InternalKey	dbformat.h	/^  InternalKey() {}  \/\/ Leave rep_ as empty to indicate it is invalid$/;"	f	class:leveldb::InternalKey
+InternalKey	dbformat.h	/^  InternalKey(const Slice& user_key, SequenceNumber s, ValueType t) {$/;"	f	class:leveldb::InternalKey
+InternalKey	dbformat.h	/^class InternalKey {$/;"	c	namespace:leveldb
+InternalKeyComparator	dbformat.h	/^  explicit InternalKeyComparator(const Comparator* c) : user_comparator_(c) {}$/;"	f	class:leveldb::InternalKeyComparator
+InternalKeyComparator	dbformat.h	/^class InternalKeyComparator : public Comparator {$/;"	c	namespace:leveldb
+InternalKeyEncodingLength	dbformat.h	/^inline size_t InternalKeyEncodingLength(const ParsedInternalKey& key) {$/;"	f	namespace:leveldb
+IsBaseLevelForKey	version_set.cc	/^bool Compaction::IsBaseLevelForKey(const Slice& user_key) {$/;"	f	class:leveldb::Compaction
+IsFileCreatedSinceLastDirSync	fault_injection_test.cc	/^bool FaultInjectionTestEnv::IsFileCreatedSinceLastDirSync($/;"	f	class:leveldb::FaultInjectionTestEnv
+IsFullySynced	fault_injection_test.cc	/^  bool IsFullySynced() const { return pos_ <= 0 || pos_ == pos_at_last_sync_; }$/;"	f	struct:leveldb::__anon10::FileState
+IsTrivialMove	version_set.cc	/^bool Compaction::IsTrivialMove() const {$/;"	f	class:leveldb::Compaction
+IsValidKey	skiplist_test.cc	/^  static bool IsValidKey(Key k) {$/;"	f	class:leveldb::ConcurrentTest	file:
+IterState	db_impl.cc	/^  IterState(port::Mutex* mutex, MemTable* mem, MemTable* imm, Version* version)$/;"	f	struct:leveldb::__anon1::IterState
+IterState	db_impl.cc	/^struct IterState {$/;"	s	namespace:leveldb::__anon1	file:
+IterStatus	db_test.cc	/^  std::string IterStatus(Iterator* iter) {$/;"	f	class:leveldb::DBTest
+Iterate	write_batch.cc	/^Status WriteBatch::Iterate(Handler* handler) const {$/;"	f	class:leveldb::WriteBatch
+Iterator	skiplist.h	/^  class Iterator {$/;"	c	class:leveldb::SkipList
+Iterator	skiplist.h	/^inline SkipList<Key, Comparator>::Iterator::Iterator(const SkipList* list) {$/;"	f	class:leveldb::SkipList::Iterator
+K	skiplist_test.cc	/^  static const uint32_t K = 4;$/;"	m	class:leveldb::ConcurrentTest	file:
+K	skiplist_test.cc	/^const uint32_t ConcurrentTest::K;$/;"	m	class:leveldb::ConcurrentTest	file:
+KVMap	db_test.cc	/^typedef std::map<std::string, std::string> KVMap;$/;"	t	namespace:leveldb::__anon13	file:
+Key	autocompact_test.cc	/^  std::string Key(int i) {$/;"	f	class:leveldb::AutoCompactTest
+Key	corruption_test.cc	/^  Slice Key(int i, std::string* storage) {$/;"	f	class:leveldb::CorruptionTest
+Key	db_test.cc	/^static std::string Key(int i) {$/;"	f	namespace:leveldb
+Key	fault_injection_test.cc	/^  Slice Key(int i, std::string* storage) const {$/;"	f	class:leveldb::FaultInjectionTest
+Key	skiplist_test.cc	/^typedef uint64_t Key;$/;"	t	namespace:leveldb	file:
+KeyComparator	memtable.h	/^    explicit KeyComparator(const InternalKeyComparator& c) : comparator(c) {}$/;"	f	struct:leveldb::MemTable::KeyComparator
+KeyComparator	memtable.h	/^  struct KeyComparator {$/;"	s	class:leveldb::MemTable
+KeyIsAfterNode	skiplist.h	/^bool SkipList<Key, Comparator>::KeyIsAfterNode(const Key& key, Node* n) const {$/;"	f	class:leveldb::SkipList
+KeyMayMatch	dbformat.cc	/^bool InternalFilterPolicy::KeyMayMatch(const Slice& key, const Slice& f) const {$/;"	f	class:leveldb::InternalFilterPolicy
+LOCKS_EXCLUDED	db_test.cc	/^  int Read() LOCKS_EXCLUDED(mu_) {$/;"	f	class:leveldb::__anon11::AtomicCounter
+LOCKS_EXCLUDED	db_test.cc	/^  void IncrementBy(int count) LOCKS_EXCLUDED(mu_) {$/;"	f	class:leveldb::__anon11::AtomicCounter
+LOCKS_EXCLUDED	db_test.cc	/^  void Reset() LOCKS_EXCLUDED(mu_) {$/;"	f	class:leveldb::__anon11::AtomicCounter
+LOCKS_EXCLUDED	fault_injection_test.cc	/^  bool IsFilesystemActive() LOCKS_EXCLUDED(mutex_) {$/;"	f	class:leveldb::FaultInjectionTestEnv
+LOCKS_EXCLUDED	fault_injection_test.cc	/^  void SetFilesystemActive(bool active) LOCKS_EXCLUDED(mutex_) {$/;"	f	class:leveldb::FaultInjectionTestEnv
+LOCKS_EXCLUDED	skiplist_test.cc	/^  void Change(ReaderState s) LOCKS_EXCLUDED(mu_) {$/;"	f	class:leveldb::TestState
+LOCKS_EXCLUDED	skiplist_test.cc	/^  void Wait(ReaderState s) LOCKS_EXCLUDED(mu_) {$/;"	f	class:leveldb::TestState
+LastRecordOffset	log_reader.cc	/^uint64_t Reader::LastRecordOffset() { return last_record_offset_; }$/;"	f	class:leveldb::log::Reader
+LastSequence	version_set.h	/^  uint64_t LastSequence() const { return last_sequence_; }$/;"	f	class:leveldb::VersionSet
+LevelFileNumIterator	version_set.cc	/^  LevelFileNumIterator(const InternalKeyComparator& icmp,$/;"	f	class:leveldb::Version::LevelFileNumIterator
+LevelFileNumIterator	version_set.cc	/^class Version::LevelFileNumIterator : public Iterator {$/;"	c	class:leveldb::Version	file:
+LevelState	version_set.cc	/^  struct LevelState {$/;"	s	class:leveldb::VersionSet::Builder	file:
+LevelSummary	version_set.cc	/^const char* VersionSet::LevelSummary(LevelSummaryStorage* scratch) const {$/;"	f	class:leveldb::VersionSet
+LevelSummaryStorage	version_set.h	/^  struct LevelSummaryStorage {$/;"	s	class:leveldb::VersionSet
+LockFileName	filename.cc	/^std::string LockFileName(const std::string& dbname) { return dbname + "\/LOCK"; }$/;"	f	namespace:leveldb
+LogAndApply	version_set.cc	/^Status VersionSet::LogAndApply(VersionEdit* edit, port::Mutex* mu) {$/;"	f	class:leveldb::VersionSet
+LogFileName	filename.cc	/^std::string LogFileName(const std::string& dbname, uint64_t number) {$/;"	f	namespace:leveldb
+LogName	recovery_test.cc	/^  std::string LogName(uint64_t number) { return LogFileName(dbname_, number); }$/;"	f	class:leveldb::RecoveryTest
+LogNumber	version_set.h	/^  uint64_t LogNumber() const { return log_number_; }$/;"	f	class:leveldb::VersionSet
+LogTest	log_test.cc	/^  LogTest()$/;"	f	class:leveldb::log::LogTest
+LogTest	log_test.cc	/^class LogTest {$/;"	c	namespace:leveldb::log	file:
+LookupKey	dbformat.cc	/^LookupKey::LookupKey(const Slice& user_key, SequenceNumber s) {$/;"	f	class:leveldb::LookupKey
+LookupKey	dbformat.h	/^class LookupKey {$/;"	c	namespace:leveldb
+MTState	db_test.cc	/^struct MTState {$/;"	s	namespace:leveldb::__anon12	file:
+MTThread	db_test.cc	/^struct MTThread {$/;"	s	namespace:leveldb::__anon12	file:
+MTThreadBody	db_test.cc	/^static void MTThreadBody(void* arg) {$/;"	f	namespace:leveldb::__anon12
+MakeFileName	filename.cc	/^static std::string MakeFileName(const std::string& dbname, uint64_t number,$/;"	f	namespace:leveldb
+MakeInputIterator	version_set.cc	/^Iterator* VersionSet::MakeInputIterator(Compaction* c) {$/;"	f	class:leveldb::VersionSet
+MakeKey	db_test.cc	/^std::string MakeKey(unsigned int num) {$/;"	f	namespace:leveldb
+MakeKey	skiplist_test.cc	/^  static Key MakeKey(uint64_t k, uint64_t g) {$/;"	f	class:leveldb::ConcurrentTest	file:
+MakeLogFile	recovery_test.cc	/^  void MakeLogFile(uint64_t lognum, SequenceNumber seq, Slice key, Slice val) {$/;"	f	class:leveldb::RecoveryTest
+MakeRoomForWrite	db_impl.cc	/^Status DBImpl::MakeRoomForWrite(bool force) {$/;"	f	class:leveldb::DBImpl
+MakeTables	db_test.cc	/^  void MakeTables(int n, const std::string& small_key,$/;"	f	class:leveldb::DBTest
+ManifestFileName	recovery_test.cc	/^  std::string ManifestFileName() {$/;"	f	class:leveldb::RecoveryTest
+ManifestFileNumber	version_set.h	/^  uint64_t ManifestFileNumber() const { return manifest_file_number_; }$/;"	f	class:leveldb::VersionSet
+ManualCompaction	db_impl.h	/^  struct ManualCompaction {$/;"	s	class:leveldb::DBImpl
+MarkFileNumberUsed	version_set.cc	/^void VersionSet::MarkFileNumberUsed(uint64_t number) {$/;"	f	class:leveldb::VersionSet
+MatchError	log_test.cc	/^  std::string MatchError(const std::string& msg) const {$/;"	f	class:leveldb::log::LogTest
+MaxBytesForLevel	version_set.cc	/^static double MaxBytesForLevel(const Options* options, int level) {$/;"	f	namespace:leveldb
+MaxFileSizeForLevel	version_set.cc	/^static uint64_t MaxFileSizeForLevel(const Options* options, int level) {$/;"	f	namespace:leveldb
+MaxGrandParentOverlapBytes	version_set.cc	/^static int64_t MaxGrandParentOverlapBytes(const Options* options) {$/;"	f	namespace:leveldb
+MaxNextLevelOverlappingBytes	version_set.cc	/^int64_t VersionSet::MaxNextLevelOverlappingBytes() {$/;"	f	class:leveldb::VersionSet
+MaxOutputFileSize	version_set.h	/^  uint64_t MaxOutputFileSize() const { return max_output_file_size_; }$/;"	f	class:leveldb::Compaction
+MaybeAddFile	version_set.cc	/^  void MaybeAddFile(Version* v, int level, FileMetaData* f) {$/;"	f	class:leveldb::VersionSet::Builder
+MaybeIgnoreError	db_impl.cc	/^void DBImpl::MaybeIgnoreError(Status* s) const {$/;"	f	class:leveldb::DBImpl
+MaybeScheduleCompaction	db_impl.cc	/^void DBImpl::MaybeScheduleCompaction() {$/;"	f	class:leveldb::DBImpl
+MemTable	memtable.cc	/^MemTable::MemTable(const InternalKeyComparator& comparator)$/;"	f	class:leveldb::MemTable
+MemTable	memtable.h	/^class MemTable {$/;"	c	namespace:leveldb
+MemTableInserter	write_batch.cc	/^class MemTableInserter : public WriteBatch::Handler {$/;"	c	namespace:leveldb::__anon6	file:
+MemTableIterator	memtable.cc	/^  explicit MemTableIterator(MemTable::Table* table) : iter_(table) {}$/;"	f	class:leveldb::MemTableIterator
+MemTableIterator	memtable.cc	/^class MemTableIterator : public Iterator {$/;"	c	namespace:leveldb	file:
+ModelDB	db_test.cc	/^  explicit ModelDB(const Options& options) : options_(options) {}$/;"	f	class:leveldb::ModelDB
+ModelDB	db_test.cc	/^class ModelDB : public DB {$/;"	c	namespace:leveldb	file:
+ModelIter	db_test.cc	/^    ModelIter(const KVMap* map, bool owned)$/;"	f	class:leveldb::ModelDB::ModelIter
+ModelIter	db_test.cc	/^  class ModelIter : public Iterator {$/;"	c	class:leveldb::ModelDB	file:
+ModelSnapshot	db_test.cc	/^  class ModelSnapshot : public Snapshot {$/;"	c	class:leveldb::ModelDB	file:
+Name	dbformat.cc	/^const char* InternalFilterPolicy::Name() const { return user_policy_->Name(); }$/;"	f	class:leveldb::InternalFilterPolicy
+Name	dbformat.cc	/^const char* InternalKeyComparator::Name() const {$/;"	f	class:leveldb::InternalKeyComparator
+NeedsCompaction	version_set.h	/^  bool NeedsCompaction() const {$/;"	f	class:leveldb::VersionSet
+New	snapshot.h	/^  SnapshotImpl* New(SequenceNumber sequence_number) {$/;"	f	class:leveldb::SnapshotList
+NewAppendableFile	fault_injection_test.cc	/^Status FaultInjectionTestEnv::NewAppendableFile(const std::string& fname,$/;"	f	class:leveldb::FaultInjectionTestEnv
+NewConcatenatingIterator	version_set.cc	/^Iterator* Version::NewConcatenatingIterator(const ReadOptions& options,$/;"	f	class:leveldb::Version
+NewDB	db_impl.cc	/^Status DBImpl::NewDB() {$/;"	f	class:leveldb::DBImpl
+NewDBIterator	db_iter.cc	/^Iterator* NewDBIterator(DBImpl* db, const Comparator* user_key_comparator,$/;"	f	namespace:leveldb
+NewFileNumber	version_set.h	/^  uint64_t NewFileNumber() { return next_file_number_++; }$/;"	f	class:leveldb::VersionSet
+NewInternalIterator	db_impl.cc	/^Iterator* DBImpl::NewInternalIterator(const ReadOptions& options,$/;"	f	class:leveldb::DBImpl
+NewIterator	db_impl.cc	/^Iterator* DBImpl::NewIterator(const ReadOptions& options) {$/;"	f	class:leveldb::DBImpl
+NewIterator	memtable.cc	/^Iterator* MemTable::NewIterator() { return new MemTableIterator(&table_); }$/;"	f	class:leveldb::MemTable
+NewIterator	table_cache.cc	/^Iterator* TableCache::NewIterator(const ReadOptions& options,$/;"	f	class:leveldb::TableCache
+NewNode	skiplist.h	/^typename SkipList<Key, Comparator>::Node* SkipList<Key, Comparator>::NewNode($/;"	f	class:leveldb::SkipList
+NewRandomAccessFile	db_test.cc	/^  Status NewRandomAccessFile(const std::string& f, RandomAccessFile** r) {$/;"	f	class:leveldb::SpecialEnv
+NewTableIterator	repair.cc	/^  Iterator* NewTableIterator(const FileMetaData& meta) {$/;"	f	class:leveldb::__anon7::Repairer	file:
+NewWritableFile	db_test.cc	/^  Status NewWritableFile(const std::string& f, WritableFile** r) {$/;"	f	class:leveldb::SpecialEnv
+NewWritableFile	fault_injection_test.cc	/^Status FaultInjectionTestEnv::NewWritableFile(const std::string& fname,$/;"	f	class:leveldb::FaultInjectionTestEnv
+NewestFirst	version_set.cc	/^static bool NewestFirst(FileMetaData* a, FileMetaData* b) {$/;"	f	namespace:leveldb
+Next	db_iter.cc	/^void DBIter::Next() {$/;"	f	class:leveldb::__anon8::DBIter
+Next	skiplist.h	/^  Node* Next(int n) {$/;"	f	struct:leveldb::SkipList::Node
+Next	skiplist.h	/^inline void SkipList<Key, Comparator>::Iterator::Next() {$/;"	f	class:leveldb::SkipList::Iterator
+NoBarrier_Next	skiplist.h	/^  Node* NoBarrier_Next(int n) {$/;"	f	struct:leveldb::SkipList::Node
+NoBarrier_SetNext	skiplist.h	/^  void NoBarrier_SetNext(int n, Node* x) {$/;"	f	struct:leveldb::SkipList::Node
+NoWriteTestPreFault	fault_injection_test.cc	/^  void NoWriteTestPreFault() {}$/;"	f	class:leveldb::FaultInjectionTest
+NoWriteTestReopenWithFault	fault_injection_test.cc	/^  void NoWriteTestReopenWithFault(ResetMethod reset_method) {$/;"	f	class:leveldb::FaultInjectionTest
+Node	skiplist.h	/^  explicit Node(const Key& k) : key(k) {}$/;"	f	struct:leveldb::SkipList::Node
+Node	skiplist.h	/^struct SkipList<Key, Comparator>::Node {$/;"	s	class:leveldb::SkipList
+NumFiles	version_set.h	/^  int NumFiles(int level) const { return files_[level].size(); }$/;"	f	class:leveldb::Version
+NumLevelBytes	version_set.cc	/^int64_t VersionSet::NumLevelBytes(int level) const {$/;"	f	class:leveldb::VersionSet
+NumLevelFiles	version_set.cc	/^int VersionSet::NumLevelFiles(int level) const {$/;"	f	class:leveldb::VersionSet
+NumLogs	recovery_test.cc	/^  int NumLogs() { return GetFiles(kLogFile).size(); }$/;"	f	class:leveldb::RecoveryTest
+NumTableFilesAtLevel	db_test.cc	/^  int NumTableFilesAtLevel(int level) {$/;"	f	class:leveldb::DBTest
+NumTables	recovery_test.cc	/^  int NumTables() { return GetFiles(kTableFile).size(); }$/;"	f	class:leveldb::RecoveryTest
+NumberString	log_test.cc	/^static std::string NumberString(int n) {$/;"	f	namespace:leveldb::log
+OldInfoLogFileName	filename.cc	/^std::string OldInfoLogFileName(const std::string& dbname) {$/;"	f	namespace:leveldb
+Open	db_impl.cc	/^Status DB::Open(const Options& options, const std::string& dbname, DB** dbptr) {$/;"	f	class:leveldb::DB
+Open	recovery_test.cc	/^  void Open(Options* options = nullptr) {$/;"	f	class:leveldb::RecoveryTest
+OpenCompactionOutputFile	db_impl.cc	/^Status DBImpl::OpenCompactionOutputFile(CompactionState* compact) {$/;"	f	class:leveldb::DBImpl
+OpenDB	fault_injection_test.cc	/^  Status OpenDB() {$/;"	f	class:leveldb::FaultInjectionTest
+OpenWithStatus	recovery_test.cc	/^  Status OpenWithStatus(Options* options = nullptr) {$/;"	f	class:leveldb::RecoveryTest
+OptionConfig	db_test.cc	/^  enum OptionConfig { kDefault, kReuse, kFilter, kUncompressed, kEnd };$/;"	g	class:leveldb::DBTest	file:
+Output	db_impl.cc	/^  struct Output {$/;"	s	struct:leveldb::DBImpl::CompactionState	file:
+OverlapInLevel	version_set.cc	/^bool Version::OverlapInLevel(int level, const Slice* smallest_user_key,$/;"	f	class:leveldb::Version
+Overlaps	version_set_test.cc	/^  bool Overlaps(const char* smallest, const char* largest) {$/;"	f	class:leveldb::FindFileTest
+PackSequenceAndType	dbformat.cc	/^static uint64_t PackSequenceAndType(uint64_t seq, ValueType t) {$/;"	f	namespace:leveldb
+ParseFileName	filename.cc	/^bool ParseFileName(const std::string& filename, uint64_t* number,$/;"	f	namespace:leveldb
+ParseInternalKey	dbformat.h	/^inline bool ParseInternalKey(const Slice& internal_key,$/;"	f	namespace:leveldb
+ParseKey	db_iter.cc	/^inline bool DBIter::ParseKey(ParsedInternalKey* ikey) {$/;"	f	class:leveldb::__anon8::DBIter
+ParsedInternalKey	dbformat.h	/^  ParsedInternalKey() {}  \/\/ Intentionally left uninitialized (for speed)$/;"	f	struct:leveldb::ParsedInternalKey
+ParsedInternalKey	dbformat.h	/^  ParsedInternalKey(const Slice& u, const SequenceNumber& seq, ValueType t)$/;"	f	struct:leveldb::ParsedInternalKey
+ParsedInternalKey	dbformat.h	/^struct ParsedInternalKey {$/;"	s	namespace:leveldb
+PartialCompactTestPreFault	fault_injection_test.cc	/^  void PartialCompactTestPreFault(int num_pre_sync, int num_post_sync) {$/;"	f	class:leveldb::FaultInjectionTest
+PartialCompactTestReopenWithFault	fault_injection_test.cc	/^  void PartialCompactTestReopenWithFault(ResetMethod reset_method,$/;"	f	class:leveldb::FaultInjectionTest
+PickCompaction	version_set.cc	/^Compaction* VersionSet::PickCompaction() {$/;"	f	class:leveldb::VersionSet
+PickLevelForMemTableOutput	version_set.cc	/^int Version::PickLevelForMemTableOutput(const Slice& smallest_user_key,$/;"	f	class:leveldb::Version
+Prev	db_iter.cc	/^void DBIter::Prev() {$/;"	f	class:leveldb::__anon8::DBIter
+Prev	skiplist.h	/^inline void SkipList<Key, Comparator>::Iterator::Prev() {$/;"	f	class:leveldb::SkipList::Iterator
+PrevLogNumber	version_set.h	/^  uint64_t PrevLogNumber() const { return prev_log_number_; }$/;"	f	class:leveldb::VersionSet
+PrintContents	write_batch_test.cc	/^static std::string PrintContents(WriteBatch* b) {$/;"	f	namespace:leveldb
+PrintLogContents	dumpfile.cc	/^Status PrintLogContents(Env* env, const std::string& fname,$/;"	f	namespace:leveldb::__anon5
+Property	corruption_test.cc	/^  int Property(const std::string& name) {$/;"	f	class:leveldb::CorruptionTest
+Put	db_impl.cc	/^Status DB::Put(const WriteOptions& opt, const Slice& key, const Slice& value) {$/;"	f	class:leveldb::DB
+Put	db_impl.cc	/^Status DBImpl::Put(const WriteOptions& o, const Slice& key, const Slice& val) {$/;"	f	class:leveldb::DBImpl
+Put	db_test.cc	/^  Status Put(const std::string& k, const std::string& v) {$/;"	f	class:leveldb::DBTest
+Put	recovery_test.cc	/^  Status Put(const std::string& k, const std::string& v) {$/;"	f	class:leveldb::RecoveryTest
+Put	write_batch.cc	/^void WriteBatch::Put(const Slice& key, const Slice& value) {$/;"	f	class:leveldb::WriteBatch
+RESET_DELETE_UNSYNCED_FILES	fault_injection_test.cc	/^  enum ResetMethod { RESET_DROP_UNSYNCED_DATA, RESET_DELETE_UNSYNCED_FILES };$/;"	e	enum:leveldb::FaultInjectionTest::ResetMethod	file:
+RESET_DROP_UNSYNCED_DATA	fault_injection_test.cc	/^  enum ResetMethod { RESET_DROP_UNSYNCED_DATA, RESET_DELETE_UNSYNCED_FILES };$/;"	e	enum:leveldb::FaultInjectionTest::ResetMethod	file:
+RUNNING	skiplist_test.cc	/^  enum ReaderState { STARTING, RUNNING, DONE };$/;"	e	enum:leveldb::TestState::ReaderState	file:
+RandomCompactionPeriod	db_iter.cc	/^  size_t RandomCompactionPeriod() {$/;"	f	class:leveldb::__anon8::DBIter	file:
+RandomHeight	skiplist.h	/^int SkipList<Key, Comparator>::RandomHeight() {$/;"	f	class:leveldb::SkipList
+RandomKey	db_test.cc	/^static std::string RandomKey(Random* rnd) {$/;"	f	namespace:leveldb
+RandomSkewedString	log_test.cc	/^static std::string RandomSkewedString(int i, Random* rnd) {$/;"	f	namespace:leveldb::log
+RandomString	db_test.cc	/^static std::string RandomString(Random* rnd, int len) {$/;"	f	namespace:leveldb
+RandomTarget	skiplist_test.cc	/^  static Key RandomTarget(Random* rnd) {$/;"	f	class:leveldb::ConcurrentTest	file:
+Read	log_test.cc	/^  std::string Read() {$/;"	f	class:leveldb::log::LogTest
+ReadPhysicalRecord	log_reader.cc	/^unsigned int Reader::ReadPhysicalRecord(Slice* result) {$/;"	f	class:leveldb::log::Reader
+ReadRecord	log_reader.cc	/^bool Reader::ReadRecord(Slice* record, std::string* scratch) {$/;"	f	class:leveldb::log::Reader
+ReadStep	skiplist_test.cc	/^  void ReadStep(Random* rnd) {$/;"	f	class:leveldb::ConcurrentTest
+ReadValue	fault_injection_test.cc	/^  Status ReadValue(int i, std::string* val) const {$/;"	f	class:leveldb::FaultInjectionTest
+Reader	log_reader.cc	/^Reader::Reader(SequentialFile* file, Reporter* reporter, bool checksum,$/;"	f	class:leveldb::log::Reader
+Reader	log_reader.h	/^class Reader {$/;"	c	namespace:leveldb::log
+ReaderState	skiplist_test.cc	/^  enum ReaderState { STARTING, RUNNING, DONE };$/;"	g	class:leveldb::TestState	file:
+RecordBackgroundError	db_impl.cc	/^void DBImpl::RecordBackgroundError(const Status& s) {$/;"	f	class:leveldb::DBImpl
+RecordReadSample	db_impl.cc	/^void DBImpl::RecordReadSample(Slice key) {$/;"	f	class:leveldb::DBImpl
+RecordReadSample	version_set.cc	/^bool Version::RecordReadSample(Slice internal_key) {$/;"	f	class:leveldb::Version
+RecordType	log_format.h	/^enum RecordType {$/;"	g	namespace:leveldb::log
+Recover	db_impl.cc	/^Status DBImpl::Recover(VersionEdit* edit, bool* save_manifest) {$/;"	f	class:leveldb::DBImpl
+Recover	version_set.cc	/^Status VersionSet::Recover(bool* save_manifest) {$/;"	f	class:leveldb::VersionSet
+RecoverLogFile	db_impl.cc	/^Status DBImpl::RecoverLogFile(uint64_t log_number, bool last_log,$/;"	f	class:leveldb::DBImpl
+RecoveryTest	recovery_test.cc	/^  RecoveryTest() : env_(Env::Default()), db_(nullptr) {$/;"	f	class:leveldb::RecoveryTest
+RecoveryTest	recovery_test.cc	/^class RecoveryTest {$/;"	c	namespace:leveldb	file:
+Ref	memtable.h	/^  void Ref() { ++refs_; }$/;"	f	class:leveldb::MemTable
+Ref	version_set.cc	/^void Version::Ref() { ++refs_; }$/;"	f	class:leveldb::Version
+ReleaseInputs	version_set.cc	/^void Compaction::ReleaseInputs() {$/;"	f	class:leveldb::Compaction
+ReleaseSnapshot	db_impl.cc	/^void DBImpl::ReleaseSnapshot(const Snapshot* snapshot) {$/;"	f	class:leveldb::DBImpl
+RenameFile	fault_injection_test.cc	/^Status FaultInjectionTestEnv::RenameFile(const std::string& s,$/;"	f	class:leveldb::FaultInjectionTestEnv
+RenameLDBToSST	db_test.cc	/^  int RenameLDBToSST() {$/;"	f	class:leveldb::DBTest
+Reopen	corruption_test.cc	/^  void Reopen() { ASSERT_OK(TryReopen()); }$/;"	f	class:leveldb::CorruptionTest
+Reopen	db_test.cc	/^  void Reopen(Options* options = nullptr) { ASSERT_OK(TryReopen(options)); }$/;"	f	class:leveldb::DBTest
+ReopenForAppend	log_test.cc	/^  void ReopenForAppend() {$/;"	f	class:leveldb::log::LogTest
+RepairDB	corruption_test.cc	/^  void RepairDB() {$/;"	f	class:leveldb::CorruptionTest
+RepairDB	repair.cc	/^Status RepairDB(const std::string& dbname, const Options& options) {$/;"	f	namespace:leveldb
+RepairTable	repair.cc	/^  void RepairTable(const std::string& src, TableInfo t) {$/;"	f	class:leveldb::__anon7::Repairer	file:
+Repairer	repair.cc	/^  Repairer(const std::string& dbname, const Options& options)$/;"	f	class:leveldb::__anon7::Repairer
+Repairer	repair.cc	/^class Repairer {$/;"	c	namespace:leveldb::__anon7	file:
+ReportCollector	log_test.cc	/^    ReportCollector() : dropped_bytes_(0) {}$/;"	f	class:leveldb::log::LogTest::ReportCollector
+ReportCollector	log_test.cc	/^  class ReportCollector : public Reader::Reporter {$/;"	c	class:leveldb::log::LogTest	file:
+ReportCorruption	log_reader.cc	/^void Reader::ReportCorruption(uint64_t bytes, const char* reason) {$/;"	f	class:leveldb::log::Reader
+ReportDrop	log_reader.cc	/^void Reader::ReportDrop(uint64_t bytes, const Status& reason) {$/;"	f	class:leveldb::log::Reader
+ReportMessage	log_test.cc	/^  std::string ReportMessage() const { return report_.message_; }$/;"	f	class:leveldb::log::LogTest
+Reporter	log_reader.h	/^  class Reporter {$/;"	c	class:leveldb::log::Reader
+ResetDBState	fault_injection_test.cc	/^  void ResetDBState(ResetMethod reset_method) {$/;"	f	class:leveldb::FaultInjectionTest
+ResetMethod	fault_injection_test.cc	/^  enum ResetMethod { RESET_DROP_UNSYNCED_DATA, RESET_DELETE_UNSYNCED_FILES };$/;"	g	class:leveldb::FaultInjectionTest	file:
+ResetState	fault_injection_test.cc	/^void FaultInjectionTestEnv::ResetState() {$/;"	f	class:leveldb::FaultInjectionTestEnv
+ReuseFileNumber	version_set.h	/^  void ReuseFileNumber(uint64_t file_number) {$/;"	f	class:leveldb::VersionSet
+ReuseLogs	fault_injection_test.cc	/^  void ReuseLogs(bool reuse) { options_.reuse_logs = reuse; }$/;"	f	class:leveldb::FaultInjectionTest
+ReuseManifest	version_set.cc	/^bool VersionSet::ReuseManifest(const std::string& dscname,$/;"	f	class:leveldb::VersionSet
+Run	repair.cc	/^  Status Run() {$/;"	f	class:leveldb::__anon7::Repairer
+RunConcurrent	skiplist_test.cc	/^static void RunConcurrent(int run) {$/;"	f	namespace:leveldb
+SSTTableFileName	filename.cc	/^std::string SSTTableFileName(const std::string& dbname, uint64_t number) {$/;"	f	namespace:leveldb
+STARTING	skiplist_test.cc	/^  enum ReaderState { STARTING, RUNNING, DONE };$/;"	e	enum:leveldb::TestState::ReaderState	file:
+STORAGE_LEVELDB_DB_BUILDER_H_	builder.h	6;"	d
+STORAGE_LEVELDB_DB_DBFORMAT_H_	dbformat.h	6;"	d
+STORAGE_LEVELDB_DB_DB_IMPL_H_	db_impl.h	6;"	d
+STORAGE_LEVELDB_DB_DB_ITER_H_	db_iter.h	6;"	d
+STORAGE_LEVELDB_DB_FILENAME_H_	filename.h	8;"	d
+STORAGE_LEVELDB_DB_LOG_FORMAT_H_	log_format.h	9;"	d
+STORAGE_LEVELDB_DB_LOG_READER_H_	log_reader.h	6;"	d
+STORAGE_LEVELDB_DB_LOG_WRITER_H_	log_writer.h	6;"	d
+STORAGE_LEVELDB_DB_MEMTABLE_H_	memtable.h	6;"	d
+STORAGE_LEVELDB_DB_SKIPLIST_H_	skiplist.h	6;"	d
+STORAGE_LEVELDB_DB_SNAPSHOT_H_	snapshot.h	6;"	d
+STORAGE_LEVELDB_DB_TABLE_CACHE_H_	table_cache.h	8;"	d
+STORAGE_LEVELDB_DB_VERSION_EDIT_H_	version_edit.h	6;"	d
+STORAGE_LEVELDB_DB_VERSION_SET_H_	version_set.h	16;"	d
+STORAGE_LEVELDB_DB_WRITE_BATCH_INTERNAL_H_	write_batch_internal.h	6;"	d
+SanitizeOptions	db_impl.cc	/^Options SanitizeOptions(const std::string& dbname,$/;"	f	namespace:leveldb
+SaveError	c.cc	/^static bool SaveError(char** errptr, const Status& s) {$/;"	f	file:
+SaveKey	db_iter.cc	/^  inline void SaveKey(const Slice& k, std::string* dst) {$/;"	f	class:leveldb::__anon8::DBIter	file:
+SaveTo	version_set.cc	/^  void SaveTo(Version* v) {$/;"	f	class:leveldb::VersionSet::Builder
+SaveValue	version_set.cc	/^static void SaveValue(void* arg, const Slice& ikey, const Slice& v) {$/;"	f	namespace:leveldb
+Saver	version_set.cc	/^struct Saver {$/;"	s	namespace:leveldb::__anon2	file:
+SaverState	version_set.cc	/^enum SaverState {$/;"	g	namespace:leveldb::__anon2	file:
+ScanTable	repair.cc	/^  void ScanTable(uint64_t number) {$/;"	f	class:leveldb::__anon7::Repairer	file:
+Seek	db_iter.cc	/^void DBIter::Seek(const Slice& target) {$/;"	f	class:leveldb::__anon8::DBIter
+Seek	skiplist.h	/^inline void SkipList<Key, Comparator>::Iterator::Seek(const Key& target) {$/;"	f	class:leveldb::SkipList::Iterator
+SeekToFirst	db_iter.cc	/^void DBIter::SeekToFirst() {$/;"	f	class:leveldb::__anon8::DBIter
+SeekToFirst	skiplist.h	/^inline void SkipList<Key, Comparator>::Iterator::SeekToFirst() {$/;"	f	class:leveldb::SkipList::Iterator
+SeekToLast	db_iter.cc	/^void DBIter::SeekToLast() {$/;"	f	class:leveldb::__anon8::DBIter
+SeekToLast	skiplist.h	/^inline void SkipList<Key, Comparator>::Iterator::SeekToLast() {$/;"	f	class:leveldb::SkipList::Iterator
+Sequence	write_batch.cc	/^SequenceNumber WriteBatchInternal::Sequence(const WriteBatch* b) {$/;"	f	class:leveldb::WriteBatchInternal
+SequenceNumber	dbformat.h	/^typedef uint64_t SequenceNumber;$/;"	t	namespace:leveldb
+Set	skiplist_test.cc	/^    void Set(int k, int v) {$/;"	f	struct:leveldb::ConcurrentTest::State
+SetByte	log_test.cc	/^  void SetByte(int offset, char new_byte) {$/;"	f	class:leveldb::log::LogTest
+SetCompactPointer	version_edit.h	/^  void SetCompactPointer(int level, const InternalKey& key) {$/;"	f	class:leveldb::VersionEdit
+SetComparatorName	version_edit.h	/^  void SetComparatorName(const Slice& name) {$/;"	f	class:leveldb::VersionEdit
+SetContents	write_batch.cc	/^void WriteBatchInternal::SetContents(WriteBatch* b, const Slice& contents) {$/;"	f	class:leveldb::WriteBatchInternal
+SetCount	write_batch.cc	/^void WriteBatchInternal::SetCount(WriteBatch* b, int n) {$/;"	f	class:leveldb::WriteBatchInternal
+SetCurrentFile	filename.cc	/^Status SetCurrentFile(Env* env, const std::string& dbname,$/;"	f	namespace:leveldb
+SetFrom	dbformat.h	/^  void SetFrom(const ParsedInternalKey& p) {$/;"	f	class:leveldb::InternalKey
+SetIgnoreDotFiles	db_test.cc	/^  void SetIgnoreDotFiles(bool ignored) { ignore_dot_files_ = ignored; }$/;"	f	class:leveldb::TestEnv
+SetLastSequence	version_edit.h	/^  void SetLastSequence(SequenceNumber seq) {$/;"	f	class:leveldb::VersionEdit
+SetLastSequence	version_set.h	/^  void SetLastSequence(uint64_t s) {$/;"	f	class:leveldb::VersionSet
+SetLogNumber	version_edit.h	/^  void SetLogNumber(uint64_t num) {$/;"	f	class:leveldb::VersionEdit
+SetNext	skiplist.h	/^  void SetNext(int n, Node* x) {$/;"	f	struct:leveldb::SkipList::Node
+SetNextFile	version_edit.h	/^  void SetNextFile(uint64_t num) {$/;"	f	class:leveldb::VersionEdit
+SetPrevLogNumber	version_edit.h	/^  void SetPrevLogNumber(uint64_t num) {$/;"	f	class:leveldb::VersionEdit
+SetSequence	write_batch.cc	/^void WriteBatchInternal::SetSequence(WriteBatch* b, SequenceNumber seq) {$/;"	f	class:leveldb::WriteBatchInternal
+SetupOtherInputs	version_set.cc	/^void VersionSet::SetupOtherInputs(Compaction* c) {$/;"	f	class:leveldb::VersionSet
+ShortSuccessor	dbformat_test.cc	/^static std::string ShortSuccessor(const std::string& s) {$/;"	f	namespace:leveldb
+Shorten	dbformat_test.cc	/^static std::string Shorten(const std::string& s, const std::string& l) {$/;"	f	namespace:leveldb
+ShouldStopBefore	version_set.cc	/^bool Compaction::ShouldStopBefore(const Slice& internal_key) {$/;"	f	class:leveldb::Compaction
+ShrinkSize	log_test.cc	/^  void ShrinkSize(int bytes) {$/;"	f	class:leveldb::log::LogTest
+Size	autocompact_test.cc	/^  uint64_t Size(const Slice& start, const Slice& limit) {$/;"	f	class:leveldb::AutoCompactTest
+Size	db_test.cc	/^  uint64_t Size(const Slice& start, const Slice& limit) {$/;"	f	class:leveldb::DBTest
+SkipList	skiplist.h	/^SkipList<Key, Comparator>::SkipList(Comparator cmp, Arena* arena)$/;"	f	class:leveldb::SkipList
+SkipList	skiplist.h	/^class SkipList {$/;"	c	namespace:leveldb
+SkipTest	skiplist_test.cc	/^class SkipTest {};$/;"	c	namespace:leveldb	file:
+SkipToInitialBlock	log_reader.cc	/^bool Reader::SkipToInitialBlock() {$/;"	f	class:leveldb::log::Reader
+SnapshotImpl	snapshot.h	/^  SnapshotImpl(SequenceNumber sequence_number)$/;"	f	class:leveldb::SnapshotImpl
+SnapshotImpl	snapshot.h	/^class SnapshotImpl : public Snapshot {$/;"	c	namespace:leveldb
+SnapshotList	snapshot.h	/^  SnapshotList() : head_(0) {$/;"	f	class:leveldb::SnapshotList
+SnapshotList	snapshot.h	/^class SnapshotList {$/;"	c	namespace:leveldb
+SomeFileOverlapsRange	version_set.cc	/^bool SomeFileOverlapsRange(const InternalKeyComparator& icmp,$/;"	f	namespace:leveldb
+SpecialEnv	db_test.cc	/^  explicit SpecialEnv(Env* base)$/;"	f	class:leveldb::SpecialEnv
+SpecialEnv	db_test.cc	/^class SpecialEnv : public EnvWrapper {$/;"	c	namespace:leveldb	file:
+StartPhase	c_test.c	/^static void StartPhase(const char* name) {$/;"	f	file:
+StartReadingAt	log_test.cc	/^  void StartReadingAt(uint64_t initial_offset) {$/;"	f	class:leveldb::log::LogTest
+State	skiplist_test.cc	/^    State() {$/;"	f	struct:leveldb::ConcurrentTest::State
+State	skiplist_test.cc	/^  struct State {$/;"	s	class:leveldb::ConcurrentTest	file:
+StdoutPrinter	leveldbutil.cc	/^class StdoutPrinter : public WritableFile {$/;"	c	namespace:leveldb::__anon9	file:
+StringDest	log_test.cc	/^  class StringDest : public WritableFile {$/;"	c	class:leveldb::log::LogTest	file:
+StringSource	log_test.cc	/^    StringSource() : force_error_(false), returned_partial_(false) {}$/;"	f	class:leveldb::log::LogTest::StringSource
+StringSource	log_test.cc	/^  class StringSource : public SequentialFile {$/;"	c	class:leveldb::log::LogTest	file:
+Sync	fault_injection_test.cc	/^Status TestWritableFile::Sync() {$/;"	f	class:leveldb::TestWritableFile
+SyncDir	fault_injection_test.cc	/^Status SyncDir(const std::string& dir) {$/;"	f	namespace:leveldb::__anon10
+SyncParent	fault_injection_test.cc	/^Status TestWritableFile::SyncParent() {$/;"	f	class:leveldb::TestWritableFile
+TEST	autocompact_test.cc	/^TEST(AutoCompactTest, ReadAll) { DoReads(kCount); }$/;"	f	namespace:leveldb
+TEST	autocompact_test.cc	/^TEST(AutoCompactTest, ReadHalf) { DoReads(kCount \/ 2); }$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, CompactionInputError) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, CompactionInputErrorParanoid) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, CorruptedDescriptor) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, MissingDescriptor) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, NewFileErrorDuringWrite) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, RecoverWriteError) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, Recovery) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, SequenceNumberRecovery) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, TableFile) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, TableFileIndexData) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, TableFileRepair) {$/;"	f	namespace:leveldb
+TEST	corruption_test.cc	/^TEST(CorruptionTest, UnrelatedKeys) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, ApproximateSizes) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, ApproximateSizes_MixOfSmallAndLarge) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, BloomFilter) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, CompactionsGenerateMultipleFiles) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, ComparatorCheck) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, CustomComparator) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, DBOpen_Options) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, DeletionMarkers1) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, DeletionMarkers2) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, DestroyEmptyDir) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, DestroyOpenDB) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, Empty) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, EmptyKey) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, EmptyValue) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, Fflush_Issue474) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, FilesDeletedAfterCompaction) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, GetEncountersEmptyLevel) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, GetFromImmutableLayer) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, GetFromVersions) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, GetIdenticalSnapshots) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, GetLevel0Ordering) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, GetMemUsage) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, GetOrderedByLevels) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, GetPicksCorrectFile) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, GetSnapshot) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, HiddenValuesAreRemoved) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, IterEmpty) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, IterMulti) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, IterMultiWithDelete) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, IterSingle) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, IterSmallAndLargeMix) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, IterateOverEmptySnapshot) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, IteratorPinsRef) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, L0_CompactionBug_Issue44_a) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, L0_CompactionBug_Issue44_b) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, Locking) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, ManifestWriteError) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, ManualCompaction) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, MinorCompactionsHappen) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, MissingSSTFile) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, MultiThreaded) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, NoSpace) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, NonWritableFileSystem) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, OverlapInLevel0) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, PutDeleteGet) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, Randomized) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, ReadWrite) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, Recover) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, RecoverDuringMemtableCompaction) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, RecoverWithLargeLog) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, RecoveryWithEmptyLog) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, RepeatedWritesToSameKey) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, Snapshot) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, SparseMerge) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, StillReadSST) {$/;"	f	namespace:leveldb
+TEST	db_test.cc	/^TEST(DBTest, WriteSyncError) {$/;"	f	namespace:leveldb
+TEST	dbformat_test.cc	/^TEST(FormatTest, InternalKeyDebugString) {$/;"	f	namespace:leveldb
+TEST	dbformat_test.cc	/^TEST(FormatTest, InternalKeyShortSeparator) {$/;"	f	namespace:leveldb
+TEST	dbformat_test.cc	/^TEST(FormatTest, InternalKeyShortestSuccessor) {$/;"	f	namespace:leveldb
+TEST	dbformat_test.cc	/^TEST(FormatTest, InternalKey_DecodeFromEmpty) {$/;"	f	namespace:leveldb
+TEST	dbformat_test.cc	/^TEST(FormatTest, InternalKey_EncodeDecode) {$/;"	f	namespace:leveldb
+TEST	dbformat_test.cc	/^TEST(FormatTest, ParsedInternalKeyDebugString) {$/;"	f	namespace:leveldb
+TEST	fault_injection_test.cc	/^TEST(FaultInjectionTest, FaultTestNoLogReuse) {$/;"	f	namespace:leveldb
+TEST	fault_injection_test.cc	/^TEST(FaultInjectionTest, FaultTestWithLogReuse) {$/;"	f	namespace:leveldb
+TEST	filename_test.cc	/^TEST(FileNameTest, Construction) {$/;"	f	namespace:leveldb
+TEST	filename_test.cc	/^TEST(FileNameTest, Parse) {$/;"	f	namespace:leveldb
+TEST	log_test.cc	/^TEST(LogTest, AlignedEof) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, BadLength) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, BadLengthAtEndIsIgnored) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, BadRecordType) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ChecksumMismatch) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, Empty) { ASSERT_EQ("EOF", Read()); }$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ErrorJoinsRecords) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, Fragmentation) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ManyBlocks) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, MarginalTrailer) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, MarginalTrailer2) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, MissingLastIsIgnored) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, OpenForAppend) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, PartialLastIsIgnored) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, RandomRead) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadEnd) { CheckOffsetPastEndReturnsNoRecords(0); }$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadError) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadFourthFirstBlockTrailer) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadFourthLastBlock) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadFourthMiddleBlock) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadFourthOneOff) { CheckInitialOffsetRecord(20015, 3); }$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadFourthStart) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadInitialOffsetIntoBlockPadding) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadPastEnd) { CheckOffsetPastEndReturnsNoRecords(5); }$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadSecondOneOff) { CheckInitialOffsetRecord(1, 1); }$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadSecondStart) { CheckInitialOffsetRecord(10007, 1); }$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadSecondTenThousand) { CheckInitialOffsetRecord(10000, 1); }$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadStart) { CheckInitialOffsetRecord(0, 0); }$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadThirdOneOff) { CheckInitialOffsetRecord(10008, 2); }$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadThirdStart) { CheckInitialOffsetRecord(20014, 2); }$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ReadWrite) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, ShortTrailer) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, SkipIntoMultiRecord) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, TruncatedTrailingRecordIsIgnored) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, UnexpectedFirstType) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, UnexpectedFullType) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, UnexpectedLastType) {$/;"	f	namespace:leveldb::log
+TEST	log_test.cc	/^TEST(LogTest, UnexpectedMiddleType) {$/;"	f	namespace:leveldb::log
+TEST	recovery_test.cc	/^TEST(RecoveryTest, LargeManifestCompacted) {$/;"	f	namespace:leveldb
+TEST	recovery_test.cc	/^TEST(RecoveryTest, LogFileReuse) {$/;"	f	namespace:leveldb
+TEST	recovery_test.cc	/^TEST(RecoveryTest, ManifestMissing) {$/;"	f	namespace:leveldb
+TEST	recovery_test.cc	/^TEST(RecoveryTest, ManifestReused) {$/;"	f	namespace:leveldb
+TEST	recovery_test.cc	/^TEST(RecoveryTest, MultipleLogFiles) {$/;"	f	namespace:leveldb
+TEST	recovery_test.cc	/^TEST(RecoveryTest, MultipleMemTables) {$/;"	f	namespace:leveldb
+TEST	recovery_test.cc	/^TEST(RecoveryTest, NoLogFiles) {$/;"	f	namespace:leveldb
+TEST	skiplist_test.cc	/^TEST(SkipTest, Concurrent1) { RunConcurrent(1); }$/;"	f	namespace:leveldb
+TEST	skiplist_test.cc	/^TEST(SkipTest, Concurrent2) { RunConcurrent(2); }$/;"	f	namespace:leveldb
+TEST	skiplist_test.cc	/^TEST(SkipTest, Concurrent3) { RunConcurrent(3); }$/;"	f	namespace:leveldb
+TEST	skiplist_test.cc	/^TEST(SkipTest, Concurrent4) { RunConcurrent(4); }$/;"	f	namespace:leveldb
+TEST	skiplist_test.cc	/^TEST(SkipTest, Concurrent5) { RunConcurrent(5); }$/;"	f	namespace:leveldb
+TEST	skiplist_test.cc	/^TEST(SkipTest, ConcurrentWithoutThreads) {$/;"	f	namespace:leveldb
+TEST	skiplist_test.cc	/^TEST(SkipTest, Empty) {$/;"	f	namespace:leveldb
+TEST	skiplist_test.cc	/^TEST(SkipTest, InsertAndLookup) {$/;"	f	namespace:leveldb
+TEST	version_edit_test.cc	/^TEST(VersionEditTest, EncodeDecode) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(AddBoundaryInputsTest, TestDisjoinFilePointers) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(AddBoundaryInputsTest, TestEmptyCompactionFiles) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(AddBoundaryInputsTest, TestEmptyFileSets) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(AddBoundaryInputsTest, TestEmptyLevelFiles) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(AddBoundaryInputsTest, TestNoBoundaryFiles) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(AddBoundaryInputsTest, TestOneBoundaryFiles) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(AddBoundaryInputsTest, TestTwoBoundaryFiles) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(FindFileTest, Empty) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(FindFileTest, Multiple) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(FindFileTest, MultipleNullBoundaries) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(FindFileTest, OverlapSequenceChecks) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(FindFileTest, OverlappingFiles) {$/;"	f	namespace:leveldb
+TEST	version_set_test.cc	/^TEST(FindFileTest, Single) {$/;"	f	namespace:leveldb
+TEST	write_batch_test.cc	/^TEST(WriteBatchTest, Append) {$/;"	f	namespace:leveldb
+TEST	write_batch_test.cc	/^TEST(WriteBatchTest, ApproximateSize) {$/;"	f	namespace:leveldb
+TEST	write_batch_test.cc	/^TEST(WriteBatchTest, Corruption) {$/;"	f	namespace:leveldb
+TEST	write_batch_test.cc	/^TEST(WriteBatchTest, Empty) {$/;"	f	namespace:leveldb
+TEST	write_batch_test.cc	/^TEST(WriteBatchTest, Multiple) {$/;"	f	namespace:leveldb
+TEST_CompactMemTable	db_impl.cc	/^Status DBImpl::TEST_CompactMemTable() {$/;"	f	class:leveldb::DBImpl
+TEST_CompactRange	db_impl.cc	/^void DBImpl::TEST_CompactRange(int level, const Slice* begin,$/;"	f	class:leveldb::DBImpl
+TEST_MaxNextLevelOverlappingBytes	db_impl.cc	/^int64_t DBImpl::TEST_MaxNextLevelOverlappingBytes() {$/;"	f	class:leveldb::DBImpl
+TEST_NewInternalIterator	db_impl.cc	/^Iterator* DBImpl::TEST_NewInternalIterator() {$/;"	f	class:leveldb::DBImpl
+Table	memtable.h	/^  typedef SkipList<const char*, KeyComparator> Table;$/;"	t	class:leveldb::MemTable
+TableAndFile	table_cache.cc	/^struct TableAndFile {$/;"	s	namespace:leveldb	file:
+TableCache	table_cache.cc	/^TableCache::TableCache(const std::string& dbname, const Options& options,$/;"	f	class:leveldb::TableCache
+TableCache	table_cache.h	/^class TableCache {$/;"	c	namespace:leveldb
+TableCacheSize	db_impl.cc	/^static int TableCacheSize(const Options& sanitized_options) {$/;"	f	namespace:leveldb
+TableFileName	filename.cc	/^std::string TableFileName(const std::string& dbname, uint64_t number) {$/;"	f	namespace:leveldb
+TableInfo	repair.cc	/^  struct TableInfo {$/;"	s	class:leveldb::__anon7::Repairer	file:
+Tag	version_edit.cc	/^enum Tag {$/;"	g	namespace:leveldb	file:
+TargetFileSize	version_set.cc	/^static size_t TargetFileSize(const Options* options) {$/;"	f	namespace:leveldb
+TempFileName	filename.cc	/^std::string TempFileName(const std::string& dbname, uint64_t number) {$/;"	f	namespace:leveldb
+TestEncodeDecode	version_edit_test.cc	/^static void TestEncodeDecode(const VersionEdit& edit) {$/;"	f	namespace:leveldb
+TestEnv	db_test.cc	/^  explicit TestEnv(Env* base) : EnvWrapper(base), ignore_dot_files_(false) {}$/;"	f	class:leveldb::TestEnv
+TestEnv	db_test.cc	/^class TestEnv : public EnvWrapper {$/;"	c	namespace:leveldb	file:
+TestKey	dbformat_test.cc	/^static void TestKey(const std::string& key, uint64_t seq, ValueType vt) {$/;"	f	namespace:leveldb
+TestState	skiplist_test.cc	/^  explicit TestState(int s)$/;"	f	class:leveldb::TestState
+TestState	skiplist_test.cc	/^class TestState {$/;"	c	namespace:leveldb	file:
+TestWritableFile	fault_injection_test.cc	/^TestWritableFile::TestWritableFile(const FileState& state, WritableFile* f,$/;"	f	class:leveldb::TestWritableFile
+TestWritableFile	fault_injection_test.cc	/^class TestWritableFile : public WritableFile {$/;"	c	namespace:leveldb	file:
+TotalFileSize	version_set.cc	/^static int64_t TotalFileSize(const std::vector<FileMetaData*>& files) {$/;"	f	namespace:leveldb
+TotalTableFiles	db_test.cc	/^  int TotalTableFiles() {$/;"	f	class:leveldb::DBTest
+Truncate	fault_injection_test.cc	/^Status Truncate(const std::string& filename, uint64_t length) {$/;"	f	namespace:leveldb::__anon10
+TryReopen	corruption_test.cc	/^  Status TryReopen() {$/;"	f	class:leveldb::CorruptionTest
+TryReopen	db_test.cc	/^  Status TryReopen(Options* options) {$/;"	f	class:leveldb::DBTest
+Unref	memtable.h	/^  void Unref() {$/;"	f	class:leveldb::MemTable
+Unref	version_set.cc	/^void Version::Unref() {$/;"	f	class:leveldb::Version
+UnrefEntry	table_cache.cc	/^static void UnrefEntry(void* arg1, void* arg2) {$/;"	f	namespace:leveldb
+UntrackFile	fault_injection_test.cc	/^void FaultInjectionTestEnv::UntrackFile(const std::string& f) {$/;"	f	class:leveldb::FaultInjectionTestEnv
+UpdateStats	version_set.cc	/^bool Version::UpdateStats(const GetStats& stats) {$/;"	f	class:leveldb::Version
+Usage	leveldbutil.cc	/^static void Usage() {$/;"	f	file:
+VAL_EXPECT_ERROR	fault_injection_test.cc	/^  enum ExpectedVerifResult { VAL_EXPECT_NO_ERROR, VAL_EXPECT_ERROR };$/;"	e	enum:leveldb::FaultInjectionTest::ExpectedVerifResult	file:
+VAL_EXPECT_NO_ERROR	fault_injection_test.cc	/^  enum ExpectedVerifResult { VAL_EXPECT_NO_ERROR, VAL_EXPECT_ERROR };$/;"	e	enum:leveldb::FaultInjectionTest::ExpectedVerifResult	file:
+Valid	skiplist.h	/^inline bool SkipList<Key, Comparator>::Iterator::Valid() const {$/;"	f	class:leveldb::SkipList::Iterator
+Value	corruption_test.cc	/^  Slice Value(int k, std::string* storage) {$/;"	f	class:leveldb::CorruptionTest
+Value	fault_injection_test.cc	/^  Slice Value(int k, std::string* storage) const {$/;"	f	class:leveldb::FaultInjectionTest
+ValueType	dbformat.h	/^enum ValueType { kTypeDeletion = 0x0, kTypeValue = 0x1 };$/;"	g	namespace:leveldb
+Verify	fault_injection_test.cc	/^  Status Verify(int start_idx, int num_vals,$/;"	f	class:leveldb::FaultInjectionTest
+Version	version_set.h	/^  explicit Version(VersionSet* vset)$/;"	f	class:leveldb::Version
+Version	version_set.h	/^class Version {$/;"	c	namespace:leveldb
+VersionEdit	version_edit.h	/^  VersionEdit() { Clear(); }$/;"	f	class:leveldb::VersionEdit
+VersionEdit	version_edit.h	/^class VersionEdit {$/;"	c	namespace:leveldb
+VersionEditPrinter	dumpfile.cc	/^static void VersionEditPrinter(uint64_t pos, Slice record, WritableFile* dst) {$/;"	f	namespace:leveldb::__anon5
+VersionEditTest	version_edit_test.cc	/^class VersionEditTest {};$/;"	c	namespace:leveldb	file:
+VersionSet	version_set.cc	/^VersionSet::VersionSet(const std::string& dbname, const Options* options,$/;"	f	class:leveldb::VersionSet
+VersionSet	version_set.h	/^class VersionSet {$/;"	c	namespace:leveldb
+WritableFileClosed	fault_injection_test.cc	/^void FaultInjectionTestEnv::WritableFileClosed(const FileState& state) {$/;"	f	class:leveldb::FaultInjectionTestEnv
+Write	db_impl.cc	/^Status DBImpl::Write(const WriteOptions& options, WriteBatch* updates) {$/;"	f	class:leveldb::DBImpl
+Write	log_test.cc	/^  void Write(const std::string& msg) {$/;"	f	class:leveldb::log::LogTest
+WriteBatch	write_batch.cc	/^WriteBatch::WriteBatch() { Clear(); }$/;"	f	class:leveldb::WriteBatch
+WriteBatchInternal	write_batch_internal.h	/^class WriteBatchInternal {$/;"	c	namespace:leveldb
+WriteBatchItemPrinter	dumpfile.cc	/^class WriteBatchItemPrinter : public WriteBatch::Handler {$/;"	c	namespace:leveldb::__anon5	file:
+WriteBatchPrinter	dumpfile.cc	/^static void WriteBatchPrinter(uint64_t pos, Slice record, WritableFile* dst) {$/;"	f	namespace:leveldb::__anon5
+WriteBatchTest	write_batch_test.cc	/^class WriteBatchTest {};$/;"	c	namespace:leveldb	file:
+WriteDescriptor	repair.cc	/^  Status WriteDescriptor() {$/;"	f	class:leveldb::__anon7::Repairer	file:
+WriteInitialOffsetLog	log_test.cc	/^  void WriteInitialOffsetLog() {$/;"	f	class:leveldb::log::LogTest
+WriteLevel0Table	db_impl.cc	/^Status DBImpl::WriteLevel0Table(MemTable* mem, VersionEdit* edit,$/;"	f	class:leveldb::DBImpl
+WriteSnapshot	version_set.cc	/^Status VersionSet::WriteSnapshot(log::Writer* log) {$/;"	f	class:leveldb::VersionSet
+WriteStep	skiplist_test.cc	/^  void WriteStep(Random* rnd) {$/;"	f	class:leveldb::ConcurrentTest
+Writer	db_impl.cc	/^  explicit Writer(port::Mutex* mu)$/;"	f	struct:leveldb::DBImpl::Writer
+Writer	db_impl.cc	/^struct DBImpl::Writer {$/;"	s	class:leveldb::DBImpl	file:
+Writer	log_writer.cc	/^Writer::Writer(WritableFile* dest) : dest_(dest), block_offset_(0) {$/;"	f	class:leveldb::log::Writer
+Writer	log_writer.cc	/^Writer::Writer(WritableFile* dest, uint64_t dest_length)$/;"	f	class:leveldb::log::Writer
+Writer	log_writer.h	/^class Writer {$/;"	c	namespace:leveldb::log
+WrittenBytes	log_test.cc	/^  size_t WrittenBytes() const { return dest_.contents_.size(); }$/;"	f	class:leveldb::log::LogTest
+added_files	version_set.cc	/^    FileSet* added_files;$/;"	m	struct:leveldb::VersionSet::Builder::LevelState	file:
+all_files_	version_set_test.cc	/^  std::vector<FileMetaData*> all_files_;$/;"	m	class:leveldb::AddBoundaryInputsTest	file:
+allowed_seeks	version_edit.h	/^  int allowed_seeks;  \/\/ Seeks allowed until compaction$/;"	m	struct:leveldb::FileMetaData
+arena_	memtable.h	/^  Arena arena_;$/;"	m	class:leveldb::MemTable
+arena_	skiplist.h	/^  Arena* const arena_;  \/\/ Arena used for allocations of nodes$/;"	m	class:leveldb::SkipList
+arena_	skiplist_test.cc	/^  Arena arena_;$/;"	m	class:leveldb::ConcurrentTest	file:
+backing_store_	log_reader.h	/^  char* const backing_store_;$/;"	m	class:leveldb::log::Reader
+base_	version_set.cc	/^  Version* base_;$/;"	m	class:leveldb::VersionSet::Builder	file:
+batch	db_impl.cc	/^  WriteBatch* batch;$/;"	m	struct:leveldb::DBImpl::Writer	file:
+begin	db_impl.h	/^    const InternalKey* begin;  \/\/ null means beginning of key range$/;"	m	struct:leveldb::DBImpl::ManualCompaction
+block_offset_	log_writer.h	/^  int block_offset_;  \/\/ Current offset in block$/;"	m	class:leveldb::log::Writer
+buffer	version_set.h	/^    char buffer[100];$/;"	m	struct:leveldb::VersionSet::LevelSummaryStorage
+buffer_	log_reader.h	/^  Slice buffer_;$/;"	m	class:leveldb::log::Reader
+builder	db_impl.cc	/^  TableBuilder* builder;$/;"	m	struct:leveldb::DBImpl::CompactionState	file:
+bytes_read	db_impl.h	/^    int64_t bytes_read;$/;"	m	struct:leveldb::DBImpl::CompactionStats
+bytes_until_read_sampling_	db_iter.cc	/^  size_t bytes_until_read_sampling_;$/;"	m	class:leveldb::__anon8::DBIter	file:
+bytes_written	db_impl.h	/^    int64_t bytes_written;$/;"	m	struct:leveldb::DBImpl::CompactionStats
+cache_	table_cache.h	/^  Cache* cache_;$/;"	m	class:leveldb::TableCache
+checksum_	log_reader.h	/^  bool const checksum_;$/;"	m	class:leveldb::log::Reader
+compact_pointer_	version_set.h	/^  std::string compact_pointer_[config::kNumLevels];$/;"	m	class:leveldb::VersionSet
+compact_pointers_	version_edit.h	/^  std::vector<std::pair<int, InternalKey>> compact_pointers_;$/;"	m	class:leveldb::VersionEdit
+compaction	db_impl.cc	/^  Compaction* const compaction;$/;"	m	struct:leveldb::DBImpl::CompactionState	file:
+compaction_files_	version_set_test.cc	/^  std::vector<FileMetaData*> compaction_files_;$/;"	m	class:leveldb::AddBoundaryInputsTest	file:
+compaction_level_	version_set.h	/^  int compaction_level_;$/;"	m	class:leveldb::Version
+compaction_score_	version_set.h	/^  double compaction_score_;$/;"	m	class:leveldb::Version
+comparator	memtable.h	/^    const InternalKeyComparator comparator;$/;"	m	struct:leveldb::MemTable::KeyComparator
+comparator_	memtable.h	/^  KeyComparator comparator_;$/;"	m	class:leveldb::MemTable
+comparator_	version_edit.h	/^  std::string comparator_;$/;"	m	class:leveldb::VersionEdit
+compare_	c.cc	/^  int (*compare_)(void*, const char* a, size_t alen, const char* b,$/;"	m	struct:leveldb_comparator_t	file:
+compare_	skiplist.h	/^  Comparator const compare_;$/;"	m	class:leveldb::SkipList
+config	dbformat.h	/^namespace config {$/;"	n	namespace:leveldb
+contents_	log_test.cc	/^    Slice contents_;$/;"	m	class:leveldb::log::LogTest::StringSource	file:
+contents_	log_test.cc	/^    std::string contents_;$/;"	m	class:leveldb::log::LogTest::StringDest	file:
+count_random_reads_	db_test.cc	/^  bool count_random_reads_;$/;"	m	class:leveldb::SpecialEnv	file:
+counter	db_test.cc	/^  std::atomic<int> counter[kNumThreads];$/;"	m	struct:leveldb::__anon12::MTState	file:
+create_	c.cc	/^  char* (*create_)(void*, const char* const* key_array,$/;"	m	struct:leveldb_filterpolicy_t	file:
+current	version_set.h	/^  Version* current() const { return current_; }$/;"	f	class:leveldb::VersionSet
+current_	skiplist_test.cc	/^  State current_;$/;"	m	class:leveldb::ConcurrentTest	file:
+current_	version_set.h	/^  Version* current_;        \/\/ == dummy_versions_.prev_$/;"	m	class:leveldb::VersionSet
+current_output	db_impl.cc	/^  Output* current_output() { return &outputs[outputs.size() - 1]; }$/;"	f	struct:leveldb::DBImpl::CompactionState
+cv	db_impl.cc	/^  port::CondVar cv;$/;"	m	struct:leveldb::DBImpl::Writer	file:
+data_sync_error_	db_test.cc	/^  std::atomic<bool> data_sync_error_;$/;"	m	class:leveldb::SpecialEnv	file:
+db_	autocompact_test.cc	/^  DB* db_;$/;"	m	class:leveldb::AutoCompactTest	file:
+db_	corruption_test.cc	/^  DB* db_;$/;"	m	class:leveldb::CorruptionTest	file:
+db_	db_iter.cc	/^  DBImpl* db_;$/;"	m	class:leveldb::__anon8::DBIter	file:
+db_	db_test.cc	/^  DB* db_;$/;"	m	class:leveldb::DBTest	file:
+db_	fault_injection_test.cc	/^  DB* db_;$/;"	m	class:leveldb::FaultInjectionTest	file:
+db_	recovery_test.cc	/^  DB* db_;$/;"	m	class:leveldb::RecoveryTest	file:
+db_lock_	db_impl.h	/^  FileLock* db_lock_;$/;"	m	class:leveldb::DBImpl
+dbfull	db_test.cc	/^  DBImpl* dbfull() { return reinterpret_cast<DBImpl*>(db_); }$/;"	f	class:leveldb::DBTest
+dbfull	recovery_test.cc	/^  DBImpl* dbfull() const { return reinterpret_cast<DBImpl*>(db_); }$/;"	f	class:leveldb::RecoveryTest
+dbname_	autocompact_test.cc	/^  std::string dbname_;$/;"	m	class:leveldb::AutoCompactTest	file:
+dbname_	corruption_test.cc	/^  std::string dbname_;$/;"	m	class:leveldb::CorruptionTest	file:
+dbname_	db_impl.h	/^  const std::string dbname_;$/;"	m	class:leveldb::DBImpl
+dbname_	db_test.cc	/^  std::string dbname_;$/;"	m	class:leveldb::DBTest	file:
+dbname_	fault_injection_test.cc	/^  std::string dbname_;$/;"	m	class:leveldb::FaultInjectionTest	file:
+dbname_	recovery_test.cc	/^  std::string dbname_;$/;"	m	class:leveldb::RecoveryTest	file:
+dbname_	repair.cc	/^  const std::string dbname_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+dbname_	table_cache.h	/^  const std::string dbname_;$/;"	m	class:leveldb::TableCache
+dbname_	version_set.h	/^  const std::string dbname_;$/;"	m	class:leveldb::VersionSet
+delay_data_sync_	db_test.cc	/^  std::atomic<bool> delay_data_sync_;$/;"	m	class:leveldb::SpecialEnv	file:
+deleted_files	version_set.cc	/^    std::set<uint64_t> deleted_files;$/;"	m	struct:leveldb::VersionSet::Builder::LevelState	file:
+deleted_files_	version_edit.h	/^  DeletedFileSet deleted_files_;$/;"	m	class:leveldb::VersionEdit
+descriptor_file_	version_set.h	/^  WritableFile* descriptor_file_;$/;"	m	class:leveldb::VersionSet
+descriptor_log_	version_set.h	/^  log::Writer* descriptor_log_;$/;"	m	class:leveldb::VersionSet
+dest_	log_test.cc	/^  StringDest dest_;$/;"	m	class:leveldb::log::LogTest	file:
+dest_	log_writer.h	/^  WritableFile* dest_;$/;"	m	class:leveldb::log::Writer
+destructor_	c.cc	/^  void (*destructor_)(void*);$/;"	m	struct:leveldb_comparator_t	file:
+destructor_	c.cc	/^  void (*destructor_)(void*);$/;"	m	struct:leveldb_filterpolicy_t	file:
+direction_	db_iter.cc	/^  Direction direction_;$/;"	m	class:leveldb::__anon8::DBIter	file:
+disjoint_sorted_files_	version_set_test.cc	/^  bool disjoint_sorted_files_;$/;"	m	class:leveldb::FindFileTest	file:
+done	db_impl.cc	/^  bool done;$/;"	m	struct:leveldb::DBImpl::Writer	file:
+done	db_impl.h	/^    bool done;$/;"	m	struct:leveldb::DBImpl::ManualCompaction
+dropped_bytes_	log_test.cc	/^    size_t dropped_bytes_;$/;"	m	class:leveldb::log::LogTest::ReportCollector	file:
+dst_	dumpfile.cc	/^  WritableFile* dst_;$/;"	m	class:leveldb::__anon5::CorruptionReporter	file:
+dst_	dumpfile.cc	/^  WritableFile* dst_;$/;"	m	class:leveldb::__anon5::WriteBatchItemPrinter	file:
+dummy_versions_	version_set.h	/^  Version dummy_versions_;  \/\/ Head of circular doubly-linked list of versions.$/;"	m	class:leveldb::VersionSet
+edit	version_set.h	/^  VersionEdit* edit() { return &edit_; }$/;"	f	class:leveldb::Compaction
+edit_	repair.cc	/^  VersionEdit edit_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+edit_	version_set.h	/^  VersionEdit edit_;$/;"	m	class:leveldb::Compaction
+empty	snapshot.h	/^  bool empty() const { return head_.next_ == &head_; }$/;"	f	class:leveldb::SnapshotList
+end	db_impl.h	/^    const InternalKey* end;    \/\/ null means end of key range$/;"	m	struct:leveldb::DBImpl::ManualCompaction
+end_	dbformat.h	/^  const char* end_;$/;"	m	class:leveldb::LookupKey
+end_of_buffer_offset_	log_reader.h	/^  uint64_t end_of_buffer_offset_;$/;"	m	class:leveldb::log::Reader
+env	recovery_test.cc	/^  Env* env() const { return env_; }$/;"	f	class:leveldb::RecoveryTest
+env_	corruption_test.cc	/^  test::ErrorEnv env_;$/;"	m	class:leveldb::CorruptionTest	file:
+env_	db_impl.h	/^  Env* const env_;$/;"	m	class:leveldb::DBImpl
+env_	db_test.cc	/^  SpecialEnv* env_;$/;"	m	class:leveldb::DBTest	file:
+env_	fault_injection_test.cc	/^  FaultInjectionTestEnv* env_;$/;"	m	class:leveldb::FaultInjectionTest	file:
+env_	fault_injection_test.cc	/^  FaultInjectionTestEnv* env_;$/;"	m	class:leveldb::TestWritableFile	file:
+env_	recovery_test.cc	/^  Env* env_;$/;"	m	class:leveldb::RecoveryTest	file:
+env_	repair.cc	/^  Env* const env_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+env_	table_cache.h	/^  Env* const env_;$/;"	m	class:leveldb::TableCache
+env_	version_set.h	/^  Env* const env_;$/;"	m	class:leveldb::VersionSet
+eof_	log_reader.h	/^  bool eof_;  \/\/ Last Read() indicated EOF by returning < kBlockSize$/;"	m	class:leveldb::log::Reader
+fake_filter_result	c_test.c	/^static uint8_t fake_filter_result = 1;$/;"	v	file:
+file	table_cache.cc	/^  RandomAccessFile* file;$/;"	m	struct:leveldb::TableAndFile	file:
+file_	log_reader.h	/^  SequentialFile* const file_;$/;"	m	class:leveldb::log::Reader
+file_size	db_impl.cc	/^    uint64_t file_size;$/;"	m	struct:leveldb::DBImpl::CompactionState::Output	file:
+file_size	version_edit.h	/^  uint64_t file_size;    \/\/ File size in bytes$/;"	m	struct:leveldb::FileMetaData
+file_to_compact_	version_set.h	/^  FileMetaData* file_to_compact_;$/;"	m	class:leveldb::Version
+file_to_compact_level_	version_set.h	/^  int file_to_compact_level_;$/;"	m	class:leveldb::Version
+filename_	fault_injection_test.cc	/^  std::string filename_;$/;"	m	struct:leveldb::__anon10::FileState	file:
+files_	version_set.h	/^  std::vector<FileMetaData*> files_[config::kNumLevels];$/;"	m	class:leveldb::Version
+files_	version_set_test.cc	/^  std::vector<FileMetaData*> files_;$/;"	m	class:leveldb::FindFileTest	file:
+filter_policy_	db_test.cc	/^  const FilterPolicy* filter_policy_;$/;"	m	class:leveldb::DBTest	file:
+flist_	version_set.cc	/^  const std::vector<FileMetaData*>* const flist_;$/;"	m	class:leveldb::Version::LevelFileNumIterator::std	file:
+force_error_	log_test.cc	/^    bool force_error_;$/;"	m	class:leveldb::log::LogTest::StringSource	file:
+gen	skiplist_test.cc	/^  static uint64_t gen(Key key) { return (key >> 8) & 0xffffffffu; }$/;"	f	class:leveldb::ConcurrentTest	file:
+generation	skiplist_test.cc	/^    std::atomic<int> generation[K];$/;"	m	struct:leveldb::ConcurrentTest::State	file:
+grandparent_index_	version_set.h	/^  size_t grandparent_index_;  \/\/ Index in grandparent_starts_$/;"	m	class:leveldb::Compaction
+grandparents_	version_set.h	/^  std::vector<FileMetaData*> grandparents_;$/;"	m	class:leveldb::Compaction
+has_comparator_	version_edit.h	/^  bool has_comparator_;$/;"	m	class:leveldb::VersionEdit
+has_imm_	db_impl.h	/^  std::atomic<bool> has_imm_;         \/\/ So bg thread can detect non-null imm_$/;"	m	class:leveldb::DBImpl
+has_last_sequence_	version_edit.h	/^  bool has_last_sequence_;$/;"	m	class:leveldb::VersionEdit
+has_log_number_	version_edit.h	/^  bool has_log_number_;$/;"	m	class:leveldb::VersionEdit
+has_next_file_number_	version_edit.h	/^  bool has_next_file_number_;$/;"	m	class:leveldb::VersionEdit
+has_prev_log_number_	version_edit.h	/^  bool has_prev_log_number_;$/;"	m	class:leveldb::VersionEdit
+hash	skiplist_test.cc	/^  static uint64_t hash(Key key) { return key & 0xff; }$/;"	f	class:leveldb::ConcurrentTest	file:
+head_	skiplist.h	/^  Node* const head_;$/;"	m	class:leveldb::SkipList
+head_	snapshot.h	/^  SnapshotImpl head_;$/;"	m	class:leveldb::SnapshotList
+icmp_	repair.cc	/^  InternalKeyComparator const icmp_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+icmp_	version_set.cc	/^  const InternalKeyComparator icmp_;$/;"	m	class:leveldb::Version::LevelFileNumIterator	file:
+icmp_	version_set.h	/^  const InternalKeyComparator icmp_;$/;"	m	class:leveldb::VersionSet
+icmp_	version_set_test.cc	/^  InternalKeyComparator icmp_;$/;"	m	class:leveldb::AddBoundaryInputsTest	file:
+id	db_test.cc	/^  int id;$/;"	m	struct:leveldb::__anon12::MTThread	file:
+ignore_dot_files_	db_test.cc	/^  bool ignore_dot_files_;$/;"	m	class:leveldb::TestEnv	file:
+index_	version_set.cc	/^  uint32_t index_;$/;"	m	class:leveldb::Version::LevelFileNumIterator	file:
+initial_offset_	log_reader.h	/^  uint64_t const initial_offset_;$/;"	m	class:leveldb::log::Reader
+initial_offset_last_record_offsets_	log_test.cc	/^  static uint64_t initial_offset_last_record_offsets_[];$/;"	m	class:leveldb::log::LogTest	file:
+initial_offset_last_record_offsets_	log_test.cc	/^uint64_t LogTest::initial_offset_last_record_offsets_[] = {$/;"	m	class:leveldb::log::LogTest	file:
+initial_offset_record_sizes_	log_test.cc	/^  static size_t initial_offset_record_sizes_[];$/;"	m	class:leveldb::log::LogTest	file:
+initial_offset_record_sizes_	log_test.cc	/^size_t LogTest::initial_offset_record_sizes_[] = {$/;"	m	class:leveldb::log::LogTest	file:
+input	version_set.h	/^  FileMetaData* input(int which, int i) const { return inputs_[which][i]; }$/;"	f	class:leveldb::Compaction
+input_version_	version_set.h	/^  Version* input_version_;$/;"	m	class:leveldb::Compaction
+inputs_	version_set.h	/^  std::vector<FileMetaData*> inputs_[2];  \/\/ The two sets of inputs$/;"	m	class:leveldb::Compaction
+internal_comparator	version_set.cc	/^    const InternalKeyComparator* internal_comparator;$/;"	m	struct:leveldb::VersionSet::Builder::BySmallestKey	file:
+internal_comparator_	db_impl.h	/^  const InternalKeyComparator internal_comparator_;$/;"	m	class:leveldb::DBImpl
+internal_filter_policy_	db_impl.h	/^  const InternalFilterPolicy internal_filter_policy_;$/;"	m	class:leveldb::DBImpl
+internal_key	dbformat.h	/^  Slice internal_key() const { return Slice(kstart_, end_ - kstart_); }$/;"	f	class:leveldb::LookupKey
+ipolicy_	repair.cc	/^  InternalFilterPolicy const ipolicy_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+is_default	c.cc	/^  bool is_default;$/;"	m	struct:leveldb_env_t	file:
+iter_	db_iter.cc	/^  Iterator* const iter_;$/;"	m	class:leveldb::__anon8::DBIter	file:
+iter_	db_test.cc	/^    KVMap::const_iterator iter_;$/;"	m	class:leveldb::ModelDB::ModelIter	file:
+iter_	memtable.cc	/^  MemTable::Table::Iterator iter_;$/;"	m	class:leveldb::MemTableIterator	file:
+kBadRecord	log_reader.h	/^    kBadRecord = kMaxRecordType + 2$/;"	e	enum:leveldb::log::Reader::__anon3
+kBlockSize	log_format.h	/^static const int kBlockSize = 32768;$/;"	m	namespace:leveldb::log
+kCompactPointer	version_edit.cc	/^  kCompactPointer = 5,$/;"	e	enum:leveldb::Tag	file:
+kComparator	version_edit.cc	/^  kComparator = 1,$/;"	e	enum:leveldb::Tag	file:
+kCorrupt	version_set.cc	/^  kCorrupt,$/;"	e	enum:leveldb::__anon2::SaverState	file:
+kCount	autocompact_test.cc	/^static const int kCount = kTotalSize \/ kValueSize;$/;"	m	namespace:leveldb	file:
+kCurrentFile	filename.h	/^  kCurrentFile,$/;"	e	enum:leveldb::FileType
+kDBLockFile	filename.h	/^  kDBLockFile,$/;"	e	enum:leveldb::FileType
+kDefault	db_test.cc	/^  enum OptionConfig { kDefault, kReuse, kFilter, kUncompressed, kEnd };$/;"	e	enum:leveldb::DBTest::OptionConfig	file:
+kDeleted	version_set.cc	/^  kDeleted,$/;"	e	enum:leveldb::__anon2::SaverState	file:
+kDeletedFile	version_edit.cc	/^  kDeletedFile = 6,$/;"	e	enum:leveldb::Tag	file:
+kDescriptorFile	filename.h	/^  kDescriptorFile,$/;"	e	enum:leveldb::FileType
+kEnd	db_test.cc	/^  enum OptionConfig { kDefault, kReuse, kFilter, kUncompressed, kEnd };$/;"	e	enum:leveldb::DBTest::OptionConfig	file:
+kEof	log_reader.h	/^    kEof = kMaxRecordType + 1,$/;"	e	enum:leveldb::log::Reader::__anon3
+kFilter	db_test.cc	/^  enum OptionConfig { kDefault, kReuse, kFilter, kUncompressed, kEnd };$/;"	e	enum:leveldb::DBTest::OptionConfig	file:
+kFirstType	log_format.h	/^  kFirstType = 2,$/;"	e	enum:leveldb::log::RecordType
+kForward	db_iter.cc	/^  enum Direction { kForward, kReverse };$/;"	e	enum:leveldb::__anon8::DBIter::Direction	file:
+kFound	version_set.cc	/^  kFound,$/;"	e	enum:leveldb::__anon2::SaverState	file:
+kFullType	log_format.h	/^  kFullType = 1,$/;"	e	enum:leveldb::log::RecordType
+kHeader	write_batch.cc	/^static const size_t kHeader = 12;$/;"	m	namespace:leveldb	file:
+kHeaderSize	log_format.h	/^static const int kHeaderSize = 4 + 2 + 1;$/;"	m	namespace:leveldb::log
+kInfoLogFile	filename.h	/^  kInfoLogFile  \/\/ Either the current one, or an old one$/;"	e	enum:leveldb::FileType
+kL0_CompactionTrigger	dbformat.h	/^static const int kL0_CompactionTrigger = 500;$/;"	m	namespace:leveldb::config
+kL0_SlowdownWritesTrigger	dbformat.h	/^static const int kL0_SlowdownWritesTrigger = 1000;$/;"	m	namespace:leveldb::config
+kL0_StopWritesTrigger	dbformat.h	/^static const int kL0_StopWritesTrigger = 1500;$/;"	m	namespace:leveldb::config
+kLastSequence	version_edit.cc	/^  kLastSequence = 4,$/;"	e	enum:leveldb::Tag	file:
+kLastType	log_format.h	/^  kLastType = 4$/;"	e	enum:leveldb::log::RecordType
+kLogFile	filename.h	/^  kLogFile,$/;"	e	enum:leveldb::FileType
+kLogNumber	version_edit.cc	/^  kLogNumber = 2,$/;"	e	enum:leveldb::Tag	file:
+kMaxHeight	skiplist.h	/^  enum { kMaxHeight = 12 };$/;"	e	enum:leveldb::SkipList::__anon4
+kMaxMemCompactLevel	dbformat.h	/^static const int kMaxMemCompactLevel = 0;$/;"	m	namespace:leveldb::config
+kMaxNumValues	fault_injection_test.cc	/^static const int kMaxNumValues = 2000;$/;"	m	namespace:leveldb	file:
+kMaxRecordType	log_format.h	/^static const int kMaxRecordType = kLastType;$/;"	m	namespace:leveldb::log
+kMaxSequenceNumber	dbformat.h	/^static const SequenceNumber kMaxSequenceNumber = ((0x1ull << 56) - 1);$/;"	m	namespace:leveldb
+kMiddleType	log_format.h	/^  kMiddleType = 3,$/;"	e	enum:leveldb::log::RecordType
+kNewFile	version_edit.cc	/^  kNewFile = 7,$/;"	e	enum:leveldb::Tag	file:
+kNextFileNumber	version_edit.cc	/^  kNextFileNumber = 3,$/;"	e	enum:leveldb::Tag	file:
+kNotFound	version_set.cc	/^  kNotFound,$/;"	e	enum:leveldb::__anon2::SaverState	file:
+kNumIterations	fault_injection_test.cc	/^static const size_t kNumIterations = 3;$/;"	m	namespace:leveldb	file:
+kNumKeys	db_test.cc	/^static const int kNumKeys = 1000;$/;"	m	namespace:leveldb::__anon12	file:
+kNumLevels	dbformat.h	/^static const int kNumLevels = 7;$/;"	m	namespace:leveldb::config
+kNumNonTableCacheFiles	db_impl.cc	/^const int kNumNonTableCacheFiles = 10;$/;"	m	namespace:leveldb	file:
+kNumThreads	db_test.cc	/^static const int kNumThreads = 4;$/;"	m	namespace:leveldb::__anon12	file:
+kPrevLogNumber	version_edit.cc	/^  kPrevLogNumber = 9$/;"	e	enum:leveldb::Tag	file:
+kReadBytesPeriod	dbformat.h	/^static const int kReadBytesPeriod = 1048576;$/;"	m	namespace:leveldb::config
+kReuse	db_test.cc	/^  enum OptionConfig { kDefault, kReuse, kFilter, kUncompressed, kEnd };$/;"	e	enum:leveldb::DBTest::OptionConfig	file:
+kReverse	db_iter.cc	/^  enum Direction { kForward, kReverse };$/;"	e	enum:leveldb::__anon8::DBIter::Direction	file:
+kTableFile	filename.h	/^  kTableFile,$/;"	e	enum:leveldb::FileType
+kTempFile	filename.h	/^  kTempFile,$/;"	e	enum:leveldb::FileType
+kTestSeconds	db_test.cc	/^static const int kTestSeconds = 10;$/;"	m	namespace:leveldb::__anon12	file:
+kTotalSize	autocompact_test.cc	/^static const int kTotalSize = 100 * 1024 * 1024;$/;"	m	namespace:leveldb	file:
+kTypeDeletion	dbformat.h	/^enum ValueType { kTypeDeletion = 0x0, kTypeValue = 0x1 };$/;"	e	enum:leveldb::ValueType
+kTypeValue	dbformat.h	/^enum ValueType { kTypeDeletion = 0x0, kTypeValue = 0x1 };$/;"	e	enum:leveldb::ValueType
+kUncompressed	db_test.cc	/^  enum OptionConfig { kDefault, kReuse, kFilter, kUncompressed, kEnd };$/;"	e	enum:leveldb::DBTest::OptionConfig	file:
+kValueSize	autocompact_test.cc	/^static const int kValueSize = 200 * 1024;$/;"	m	namespace:leveldb	file:
+kValueSize	corruption_test.cc	/^static const int kValueSize = 1000;$/;"	m	namespace:leveldb	file:
+kValueSize	fault_injection_test.cc	/^static const int kValueSize = 1000;$/;"	m	namespace:leveldb	file:
+kValueTypeForSeek	dbformat.h	/^static const ValueType kValueTypeForSeek = kTypeValue;$/;"	m	namespace:leveldb
+kZeroType	log_format.h	/^  kZeroType = 0,$/;"	e	enum:leveldb::log::RecordType
+key	skiplist.h	/^  Key const key;$/;"	m	struct:leveldb::SkipList::Node
+key	skiplist.h	/^inline const Key& SkipList<Key, Comparator>::Iterator::key() const {$/;"	f	class:leveldb::SkipList::Iterator
+key	skiplist_test.cc	/^  static uint64_t key(Key key) { return (key >> 40); }$/;"	f	class:leveldb::ConcurrentTest	file:
+key_match_	c.cc	/^  uint8_t (*key_match_)(void*, const char* key, size_t length,$/;"	m	struct:leveldb_filterpolicy_t	file:
+kstart_	dbformat.h	/^  const char* kstart_;$/;"	m	class:leveldb::LookupKey
+largest	db_impl.cc	/^    InternalKey smallest, largest;$/;"	m	struct:leveldb::DBImpl::CompactionState::Output	file:
+largest	version_edit.h	/^  InternalKey largest;   \/\/ Largest internal key served by table$/;"	m	struct:leveldb::FileMetaData
+last_options_	db_test.cc	/^  Options last_options_;$/;"	m	class:leveldb::DBTest	file:
+last_record_offset_	log_reader.h	/^  uint64_t last_record_offset_;$/;"	m	class:leveldb::log::Reader
+last_sequence_	version_edit.h	/^  SequenceNumber last_sequence_;$/;"	m	class:leveldb::VersionEdit
+last_sequence_	version_set.h	/^  uint64_t last_sequence_;$/;"	m	class:leveldb::VersionSet
+level	db_impl.h	/^    int level;$/;"	m	struct:leveldb::DBImpl::ManualCompaction
+level	version_set.h	/^  int level() const { return level_; }$/;"	f	class:leveldb::Compaction
+level_	version_set.h	/^  int level_;$/;"	m	class:leveldb::Compaction
+level_files_	version_set_test.cc	/^  std::vector<FileMetaData*> level_files_;$/;"	m	class:leveldb::AddBoundaryInputsTest	file:
+level_ptrs_	version_set.h	/^  size_t level_ptrs_[config::kNumLevels];$/;"	m	class:leveldb::Compaction
+leveldb	autocompact_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	builder.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	builder.h	/^namespace leveldb {$/;"	n
+leveldb	corruption_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	db_impl.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	db_impl.h	/^namespace leveldb {$/;"	n
+leveldb	db_iter.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	db_iter.h	/^namespace leveldb {$/;"	n
+leveldb	db_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	dbformat.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	dbformat.h	/^namespace leveldb {$/;"	n
+leveldb	dbformat_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	dumpfile.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	fault_injection_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	filename.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	filename.h	/^namespace leveldb {$/;"	n
+leveldb	filename_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	leveldbutil.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	log_format.h	/^namespace leveldb {$/;"	n
+leveldb	log_reader.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	log_reader.h	/^namespace leveldb {$/;"	n
+leveldb	log_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	log_writer.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	log_writer.h	/^namespace leveldb {$/;"	n
+leveldb	memtable.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	memtable.h	/^namespace leveldb {$/;"	n
+leveldb	recovery_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	repair.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	skiplist.h	/^namespace leveldb {$/;"	n
+leveldb	skiplist_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	snapshot.h	/^namespace leveldb {$/;"	n
+leveldb	table_cache.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	table_cache.h	/^namespace leveldb {$/;"	n
+leveldb	version_edit.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	version_edit.h	/^namespace leveldb {$/;"	n
+leveldb	version_edit_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	version_set.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	version_set.h	/^namespace leveldb {$/;"	n
+leveldb	version_set_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	write_batch.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	write_batch_internal.h	/^namespace leveldb {$/;"	n
+leveldb	write_batch_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb_approximate_sizes	c.cc	/^void leveldb_approximate_sizes(leveldb_t* db, int num_ranges,$/;"	f
+leveldb_cache_create_lru	c.cc	/^leveldb_cache_t* leveldb_cache_create_lru(size_t capacity) {$/;"	f
+leveldb_cache_destroy	c.cc	/^void leveldb_cache_destroy(leveldb_cache_t* cache) {$/;"	f
+leveldb_cache_t	c.cc	/^struct leveldb_cache_t {$/;"	s	file:
+leveldb_close	c.cc	/^void leveldb_close(leveldb_t* db) {$/;"	f
+leveldb_compact_range	c.cc	/^void leveldb_compact_range(leveldb_t* db, const char* start_key,$/;"	f
+leveldb_comparator_create	c.cc	/^leveldb_comparator_t* leveldb_comparator_create($/;"	f
+leveldb_comparator_destroy	c.cc	/^void leveldb_comparator_destroy(leveldb_comparator_t* cmp) { delete cmp; }$/;"	f
+leveldb_comparator_t	c.cc	/^struct leveldb_comparator_t : public Comparator {$/;"	s	file:
+leveldb_create_default_env	c.cc	/^leveldb_env_t* leveldb_create_default_env() {$/;"	f
+leveldb_create_iterator	c.cc	/^leveldb_iterator_t* leveldb_create_iterator($/;"	f
+leveldb_create_snapshot	c.cc	/^const leveldb_snapshot_t* leveldb_create_snapshot(leveldb_t* db) {$/;"	f
+leveldb_delete	c.cc	/^void leveldb_delete(leveldb_t* db, const leveldb_writeoptions_t* options,$/;"	f
+leveldb_destroy_db	c.cc	/^void leveldb_destroy_db(const leveldb_options_t* options, const char* name,$/;"	f
+leveldb_env_destroy	c.cc	/^void leveldb_env_destroy(leveldb_env_t* env) {$/;"	f
+leveldb_env_get_test_directory	c.cc	/^char* leveldb_env_get_test_directory(leveldb_env_t* env) {$/;"	f
+leveldb_env_t	c.cc	/^struct leveldb_env_t {$/;"	s	file:
+leveldb_filelock_t	c.cc	/^struct leveldb_filelock_t {$/;"	s	file:
+leveldb_filterpolicy_create	c.cc	/^leveldb_filterpolicy_t* leveldb_filterpolicy_create($/;"	f
+leveldb_filterpolicy_create_bloom	c.cc	/^leveldb_filterpolicy_t* leveldb_filterpolicy_create_bloom(int bits_per_key) {$/;"	f
+leveldb_filterpolicy_destroy	c.cc	/^void leveldb_filterpolicy_destroy(leveldb_filterpolicy_t* filter) {$/;"	f
+leveldb_filterpolicy_t	c.cc	/^struct leveldb_filterpolicy_t : public FilterPolicy {$/;"	s	file:
+leveldb_free	c.cc	/^void leveldb_free(void* ptr) { free(ptr); }$/;"	f
+leveldb_get	c.cc	/^char* leveldb_get(leveldb_t* db, const leveldb_readoptions_t* options,$/;"	f
+leveldb_iter_destroy	c.cc	/^void leveldb_iter_destroy(leveldb_iterator_t* iter) {$/;"	f
+leveldb_iter_get_error	c.cc	/^void leveldb_iter_get_error(const leveldb_iterator_t* iter, char** errptr) {$/;"	f
+leveldb_iter_key	c.cc	/^const char* leveldb_iter_key(const leveldb_iterator_t* iter, size_t* klen) {$/;"	f
+leveldb_iter_next	c.cc	/^void leveldb_iter_next(leveldb_iterator_t* iter) { iter->rep->Next(); }$/;"	f
+leveldb_iter_prev	c.cc	/^void leveldb_iter_prev(leveldb_iterator_t* iter) { iter->rep->Prev(); }$/;"	f
+leveldb_iter_seek	c.cc	/^void leveldb_iter_seek(leveldb_iterator_t* iter, const char* k, size_t klen) {$/;"	f
+leveldb_iter_seek_to_first	c.cc	/^void leveldb_iter_seek_to_first(leveldb_iterator_t* iter) {$/;"	f
+leveldb_iter_seek_to_last	c.cc	/^void leveldb_iter_seek_to_last(leveldb_iterator_t* iter) {$/;"	f
+leveldb_iter_valid	c.cc	/^uint8_t leveldb_iter_valid(const leveldb_iterator_t* iter) {$/;"	f
+leveldb_iter_value	c.cc	/^const char* leveldb_iter_value(const leveldb_iterator_t* iter, size_t* vlen) {$/;"	f
+leveldb_iterator_t	c.cc	/^struct leveldb_iterator_t {$/;"	s	file:
+leveldb_logger_t	c.cc	/^struct leveldb_logger_t {$/;"	s	file:
+leveldb_major_version	c.cc	/^int leveldb_major_version() { return kMajorVersion; }$/;"	f
+leveldb_minor_version	c.cc	/^int leveldb_minor_version() { return kMinorVersion; }$/;"	f
+leveldb_open	c.cc	/^leveldb_t* leveldb_open(const leveldb_options_t* options, const char* name,$/;"	f
+leveldb_options_create	c.cc	/^leveldb_options_t* leveldb_options_create() { return new leveldb_options_t; }$/;"	f
+leveldb_options_destroy	c.cc	/^void leveldb_options_destroy(leveldb_options_t* options) { delete options; }$/;"	f
+leveldb_options_set_block_restart_interval	c.cc	/^void leveldb_options_set_block_restart_interval(leveldb_options_t* opt, int n) {$/;"	f
+leveldb_options_set_block_size	c.cc	/^void leveldb_options_set_block_size(leveldb_options_t* opt, size_t s) {$/;"	f
+leveldb_options_set_cache	c.cc	/^void leveldb_options_set_cache(leveldb_options_t* opt, leveldb_cache_t* c) {$/;"	f
+leveldb_options_set_comparator	c.cc	/^void leveldb_options_set_comparator(leveldb_options_t* opt,$/;"	f
+leveldb_options_set_compression	c.cc	/^void leveldb_options_set_compression(leveldb_options_t* opt, int t) {$/;"	f
+leveldb_options_set_create_if_missing	c.cc	/^void leveldb_options_set_create_if_missing(leveldb_options_t* opt, uint8_t v) {$/;"	f
+leveldb_options_set_env	c.cc	/^void leveldb_options_set_env(leveldb_options_t* opt, leveldb_env_t* env) {$/;"	f
+leveldb_options_set_error_if_exists	c.cc	/^void leveldb_options_set_error_if_exists(leveldb_options_t* opt, uint8_t v) {$/;"	f
+leveldb_options_set_filter_policy	c.cc	/^void leveldb_options_set_filter_policy(leveldb_options_t* opt,$/;"	f
+leveldb_options_set_info_log	c.cc	/^void leveldb_options_set_info_log(leveldb_options_t* opt, leveldb_logger_t* l) {$/;"	f
+leveldb_options_set_max_file_size	c.cc	/^void leveldb_options_set_max_file_size(leveldb_options_t* opt, size_t s) {$/;"	f
+leveldb_options_set_max_open_files	c.cc	/^void leveldb_options_set_max_open_files(leveldb_options_t* opt, int n) {$/;"	f
+leveldb_options_set_paranoid_checks	c.cc	/^void leveldb_options_set_paranoid_checks(leveldb_options_t* opt, uint8_t v) {$/;"	f
+leveldb_options_set_write_buffer_size	c.cc	/^void leveldb_options_set_write_buffer_size(leveldb_options_t* opt, size_t s) {$/;"	f
+leveldb_options_t	c.cc	/^struct leveldb_options_t {$/;"	s	file:
+leveldb_property_value	c.cc	/^char* leveldb_property_value(leveldb_t* db, const char* propname) {$/;"	f
+leveldb_put	c.cc	/^void leveldb_put(leveldb_t* db, const leveldb_writeoptions_t* options,$/;"	f
+leveldb_randomfile_t	c.cc	/^struct leveldb_randomfile_t {$/;"	s	file:
+leveldb_readoptions_create	c.cc	/^leveldb_readoptions_t* leveldb_readoptions_create() {$/;"	f
+leveldb_readoptions_destroy	c.cc	/^void leveldb_readoptions_destroy(leveldb_readoptions_t* opt) { delete opt; }$/;"	f
+leveldb_readoptions_set_fill_cache	c.cc	/^void leveldb_readoptions_set_fill_cache(leveldb_readoptions_t* opt, uint8_t v) {$/;"	f
+leveldb_readoptions_set_snapshot	c.cc	/^void leveldb_readoptions_set_snapshot(leveldb_readoptions_t* opt,$/;"	f
+leveldb_readoptions_set_verify_checksums	c.cc	/^void leveldb_readoptions_set_verify_checksums(leveldb_readoptions_t* opt,$/;"	f
+leveldb_readoptions_t	c.cc	/^struct leveldb_readoptions_t {$/;"	s	file:
+leveldb_release_snapshot	c.cc	/^void leveldb_release_snapshot(leveldb_t* db,$/;"	f
+leveldb_repair_db	c.cc	/^void leveldb_repair_db(const leveldb_options_t* options, const char* name,$/;"	f
+leveldb_seqfile_t	c.cc	/^struct leveldb_seqfile_t {$/;"	s	file:
+leveldb_snapshot_t	c.cc	/^struct leveldb_snapshot_t {$/;"	s	file:
+leveldb_t	c.cc	/^struct leveldb_t {$/;"	s	file:
+leveldb_writablefile_t	c.cc	/^struct leveldb_writablefile_t {$/;"	s	file:
+leveldb_write	c.cc	/^void leveldb_write(leveldb_t* db, const leveldb_writeoptions_t* options,$/;"	f
+leveldb_writebatch_append	c.cc	/^void leveldb_writebatch_append(leveldb_writebatch_t* destination,$/;"	f
+leveldb_writebatch_clear	c.cc	/^void leveldb_writebatch_clear(leveldb_writebatch_t* b) { b->rep.Clear(); }$/;"	f
+leveldb_writebatch_create	c.cc	/^leveldb_writebatch_t* leveldb_writebatch_create() {$/;"	f
+leveldb_writebatch_delete	c.cc	/^void leveldb_writebatch_delete(leveldb_writebatch_t* b, const char* key,$/;"	f
+leveldb_writebatch_destroy	c.cc	/^void leveldb_writebatch_destroy(leveldb_writebatch_t* b) { delete b; }$/;"	f
+leveldb_writebatch_iterate	c.cc	/^void leveldb_writebatch_iterate(const leveldb_writebatch_t* b, void* state,$/;"	f
+leveldb_writebatch_put	c.cc	/^void leveldb_writebatch_put(leveldb_writebatch_t* b, const char* key,$/;"	f
+leveldb_writebatch_t	c.cc	/^struct leveldb_writebatch_t {$/;"	s	file:
+leveldb_writeoptions_create	c.cc	/^leveldb_writeoptions_t* leveldb_writeoptions_create() {$/;"	f
+leveldb_writeoptions_destroy	c.cc	/^void leveldb_writeoptions_destroy(leveldb_writeoptions_t* opt) { delete opt; }$/;"	f
+leveldb_writeoptions_set_sync	c.cc	/^void leveldb_writeoptions_set_sync(leveldb_writeoptions_t* opt, uint8_t v) {$/;"	f
+leveldb_writeoptions_t	c.cc	/^struct leveldb_writeoptions_t {$/;"	s	file:
+levels_	version_set.cc	/^  LevelState levels_[config::kNumLevels];$/;"	m	class:leveldb::VersionSet::Builder	file:
+list_	skiplist.h	/^    const SkipList* list_;$/;"	m	class:leveldb::SkipList::Iterator
+list_	skiplist_test.cc	/^  SkipList<Key, Comparator> list_;$/;"	m	class:leveldb::ConcurrentTest	file:
+list_	snapshot.h	/^  SnapshotList* list_ = nullptr;$/;"	m	class:leveldb::SnapshotImpl
+log	log_format.h	/^namespace log {$/;"	n	namespace:leveldb
+log	log_reader.cc	/^namespace log {$/;"	n	namespace:leveldb	file:
+log	log_reader.h	/^namespace log {$/;"	n	namespace:leveldb
+log	log_test.cc	/^namespace log {$/;"	n	namespace:leveldb	file:
+log	log_writer.cc	/^namespace log {$/;"	n	namespace:leveldb	file:
+log	log_writer.h	/^namespace log {$/;"	n	namespace:leveldb
+log	version_set.h	/^namespace log {$/;"	n	namespace:leveldb
+log_	db_impl.h	/^  log::Writer* log_;$/;"	m	class:leveldb::DBImpl
+log_number_	version_edit.h	/^  uint64_t log_number_;$/;"	m	class:leveldb::VersionEdit
+log_number_	version_set.h	/^  uint64_t log_number_;$/;"	m	class:leveldb::VersionSet
+logfile_	db_impl.h	/^  WritableFile* logfile_;$/;"	m	class:leveldb::DBImpl
+logs_	repair.cc	/^  std::vector<uint64_t> logs_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+main	autocompact_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+main	c_test.c	/^int main(int argc, char** argv) {$/;"	f
+main	corruption_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+main	db_test.cc	/^int main(int argc, char** argv) {$/;"	f
+main	dbformat_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+main	fault_injection_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+main	filename_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+main	leveldbutil.cc	/^int main(int argc, char** argv) {$/;"	f
+main	log_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+main	recovery_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+main	skiplist_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+main	version_edit_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+main	version_set_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+main	write_batch_test.cc	/^int main(int argc, char** argv) { return leveldb::test::RunAllTests(); }$/;"	f
+manifest_file_number_	version_set.h	/^  uint64_t manifest_file_number_;$/;"	m	class:leveldb::VersionSet
+manifest_sync_error_	db_test.cc	/^  std::atomic<bool> manifest_sync_error_;$/;"	m	class:leveldb::SpecialEnv	file:
+manifest_write_error_	db_test.cc	/^  std::atomic<bool> manifest_write_error_;$/;"	m	class:leveldb::SpecialEnv	file:
+manifests_	repair.cc	/^  std::vector<std::string> manifests_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+map_	db_test.cc	/^    KVMap map_;$/;"	m	class:leveldb::ModelDB::ModelSnapshot	file:
+map_	db_test.cc	/^    const KVMap* const map_;$/;"	m	class:leveldb::ModelDB::ModelIter	file:
+map_	db_test.cc	/^  KVMap map_;$/;"	m	class:leveldb::ModelDB	file:
+max_height_	skiplist.h	/^  std::atomic<int> max_height_;  \/\/ Height of the entire list$/;"	m	class:leveldb::SkipList
+max_output_file_size_	version_set.h	/^  uint64_t max_output_file_size_;$/;"	m	class:leveldb::Compaction
+max_sequence	repair.cc	/^    SequenceNumber max_sequence;$/;"	m	struct:leveldb::__anon7::Repairer::TableInfo	file:
+mem_	db_impl.h	/^  MemTable* mem_;$/;"	m	class:leveldb::DBImpl
+mem_	write_batch.cc	/^  MemTable* mem_;$/;"	m	class:leveldb::__anon6::MemTableInserter	file:
+memtable_key	dbformat.h	/^  Slice memtable_key() const { return Slice(start_, end_ - start_); }$/;"	f	class:leveldb::LookupKey
+message_	log_test.cc	/^    std::string message_;$/;"	m	class:leveldb::log::LogTest::ReportCollector	file:
+meta	repair.cc	/^    FileMetaData meta;$/;"	m	struct:leveldb::__anon7::Repairer::TableInfo	file:
+micros	db_impl.h	/^    int64_t micros;$/;"	m	struct:leveldb::DBImpl::CompactionStats
+mu	db_impl.cc	/^  port::Mutex* const mu;$/;"	m	class:leveldb::__anon1::IterState::port	file:
+mu_	db_test.cc	/^  port::Mutex mu_;$/;"	m	class:leveldb::__anon11::AtomicCounter	file:
+mu_	skiplist_test.cc	/^  port::Mutex mu_;$/;"	m	class:leveldb::TestState	file:
+mutex_	db_impl.h	/^  port::Mutex mutex_;$/;"	m	class:leveldb::DBImpl
+mutex_	fault_injection_test.cc	/^  port::Mutex mutex_;$/;"	m	class:leveldb::FaultInjectionTestEnv	file:
+name_	c.cc	/^  const char* (*name_)(void*);$/;"	m	struct:leveldb_comparator_t	file:
+name_	c.cc	/^  const char* (*name_)(void*);$/;"	m	struct:leveldb_filterpolicy_t	file:
+new_files_	version_edit.h	/^  std::vector<std::pair<int, FileMetaData>> new_files_;$/;"	m	class:leveldb::VersionEdit
+newest	snapshot.h	/^  SnapshotImpl* newest() const {$/;"	f	class:leveldb::SnapshotList
+next_	skiplist.h	/^  std::atomic<Node*> next_[1];$/;"	m	struct:leveldb::SkipList::Node
+next_	snapshot.h	/^  SnapshotImpl* next_;$/;"	m	class:leveldb::SnapshotImpl
+next_	version_set.h	/^  Version* next_;     \/\/ Next version in linked list$/;"	m	class:leveldb::Version
+next_file_number_	repair.cc	/^  uint64_t next_file_number_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+next_file_number_	version_edit.h	/^  uint64_t next_file_number_;$/;"	m	class:leveldb::VersionEdit
+next_file_number_	version_set.h	/^  uint64_t next_file_number_;$/;"	m	class:leveldb::VersionSet
+no_space_	db_test.cc	/^  std::atomic<bool> no_space_;$/;"	m	class:leveldb::SpecialEnv	file:
+node_	skiplist.h	/^    Node* node_;$/;"	m	class:leveldb::SkipList::Iterator
+non_writable_	db_test.cc	/^  std::atomic<bool> non_writable_;$/;"	m	class:leveldb::SpecialEnv	file:
+num_initial_offset_records_	log_test.cc	/^  static int num_initial_offset_records_;$/;"	m	class:leveldb::log::LogTest	file:
+num_initial_offset_records_	log_test.cc	/^int LogTest::num_initial_offset_records_ =$/;"	m	class:leveldb::log::LogTest	file:
+num_input_files	version_set.h	/^  int num_input_files(int which) const { return inputs_[which].size(); }$/;"	f	class:leveldb::Compaction
+number	db_impl.cc	/^    uint64_t number;$/;"	m	struct:leveldb::DBImpl::CompactionState::Output	file:
+number	version_edit.h	/^  uint64_t number;$/;"	m	struct:leveldb::FileMetaData
+oldest	snapshot.h	/^  SnapshotImpl* oldest() const {$/;"	f	class:leveldb::SnapshotList
+operator ()	memtable.cc	/^int MemTable::KeyComparator::operator()(const char* aptr,$/;"	f	class:leveldb::MemTable::KeyComparator
+operator ()	skiplist_test.cc	/^  int operator()(const Key& a, const Key& b) const {$/;"	f	struct:leveldb::Comparator
+operator ()	version_set.cc	/^    bool operator()(FileMetaData* f1, FileMetaData* f2) const {$/;"	f	struct:leveldb::VersionSet::Builder::BySmallestKey
+option_config_	db_test.cc	/^  int option_config_;$/;"	m	class:leveldb::DBTest	file:
+options_	autocompact_test.cc	/^  Options options_;$/;"	m	class:leveldb::AutoCompactTest	file:
+options_	corruption_test.cc	/^  Options options_;$/;"	m	class:leveldb::CorruptionTest	file:
+options_	db_impl.h	/^  const Options options_;  \/\/ options_.comparator == &internal_comparator_$/;"	m	class:leveldb::DBImpl
+options_	db_test.cc	/^  const Options options_;$/;"	m	class:leveldb::ModelDB	file:
+options_	fault_injection_test.cc	/^  Options options_;$/;"	m	class:leveldb::FaultInjectionTest	file:
+options_	repair.cc	/^  const Options options_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+options_	table_cache.h	/^  const Options& options_;$/;"	m	class:leveldb::TableCache
+options_	version_set.h	/^  const Options* const options_;$/;"	m	class:leveldb::VersionSet
+outfile	db_impl.cc	/^  WritableFile* outfile;$/;"	m	struct:leveldb::DBImpl::CompactionState	file:
+outputs	db_impl.cc	/^  std::vector<Output> outputs;$/;"	m	struct:leveldb::DBImpl::CompactionState	file:
+overlapped_bytes_	version_set.h	/^  int64_t overlapped_bytes_;  \/\/ Bytes of overlap between current output$/;"	m	class:leveldb::Compaction
+override	db_impl.h	/^             const Slice& value) override;$/;"	m	class:leveldb::DBImpl
+override	db_impl.h	/^             std::string* value) override;$/;"	m	class:leveldb::DBImpl
+override	db_impl.h	/^  Iterator* NewIterator(const ReadOptions&) override;$/;"	m	class:leveldb::DBImpl
+override	db_impl.h	/^  Status Delete(const WriteOptions&, const Slice& key) override;$/;"	m	class:leveldb::DBImpl
+override	db_impl.h	/^  Status Write(const WriteOptions& options, WriteBatch* updates) override;$/;"	m	class:leveldb::DBImpl
+override	db_impl.h	/^  bool GetProperty(const Slice& property, std::string* value) override;$/;"	m	class:leveldb::DBImpl
+override	db_impl.h	/^  const Snapshot* GetSnapshot() override;$/;"	m	class:leveldb::DBImpl
+override	db_impl.h	/^  void CompactRange(const Slice* begin, const Slice* end) override;$/;"	m	class:leveldb::DBImpl
+override	db_impl.h	/^  void GetApproximateSizes(const Range* range, int n, uint64_t* sizes) override;$/;"	m	class:leveldb::DBImpl
+override	db_impl.h	/^  void ReleaseSnapshot(const Snapshot* snapshot) override;$/;"	m	class:leveldb::DBImpl
+override	db_impl.h	/^  ~DBImpl() override;$/;"	m	class:leveldb::DBImpl
+override	db_iter.cc	/^  void Next() override;$/;"	m	class:leveldb::__anon8::DBIter	file:
+override	db_iter.cc	/^  void Prev() override;$/;"	m	class:leveldb::__anon8::DBIter	file:
+override	db_iter.cc	/^  void Seek(const Slice& target) override;$/;"	m	class:leveldb::__anon8::DBIter	file:
+override	db_iter.cc	/^  void SeekToFirst() override;$/;"	m	class:leveldb::__anon8::DBIter	file:
+override	db_iter.cc	/^  void SeekToLast() override;$/;"	m	class:leveldb::__anon8::DBIter	file:
+override	db_test.cc	/^  ~ModelDB() override = default;$/;"	m	class:leveldb::ModelDB	file:
+override	dbformat.h	/^                             const Slice& limit) const override;$/;"	m	class:leveldb::InternalKeyComparator
+override	dbformat.h	/^  bool KeyMayMatch(const Slice& key, const Slice& filter) const override;$/;"	m	class:leveldb::InternalFilterPolicy
+override	dbformat.h	/^  const char* Name() const override;$/;"	m	class:leveldb::InternalFilterPolicy
+override	dbformat.h	/^  const char* Name() const override;$/;"	m	class:leveldb::InternalKeyComparator
+override	dbformat.h	/^  int Compare(const Slice& a, const Slice& b) const override;$/;"	m	class:leveldb::InternalKeyComparator
+override	dbformat.h	/^  void CreateFilter(const Slice* keys, int n, std::string* dst) const override;$/;"	m	class:leveldb::InternalFilterPolicy
+override	dbformat.h	/^  void FindShortSuccessor(std::string* key) const override;$/;"	m	class:leveldb::InternalKeyComparator
+override	fault_injection_test.cc	/^                           WritableFile** result) override;$/;"	m	class:leveldb::FaultInjectionTestEnv	file:
+override	fault_injection_test.cc	/^                         WritableFile** result) override;$/;"	m	class:leveldb::FaultInjectionTestEnv	file:
+override	fault_injection_test.cc	/^  Status Append(const Slice& data) override;$/;"	m	class:leveldb::TestWritableFile	file:
+override	fault_injection_test.cc	/^  Status Close() override;$/;"	m	class:leveldb::TestWritableFile	file:
+override	fault_injection_test.cc	/^  Status DeleteFile(const std::string& f) override;$/;"	m	class:leveldb::FaultInjectionTestEnv	file:
+override	fault_injection_test.cc	/^  Status Flush() override;$/;"	m	class:leveldb::TestWritableFile	file:
+override	fault_injection_test.cc	/^  Status RenameFile(const std::string& s, const std::string& t) override;$/;"	m	class:leveldb::FaultInjectionTestEnv	file:
+override	fault_injection_test.cc	/^  Status Sync() override;$/;"	m	class:leveldb::TestWritableFile	file:
+override	fault_injection_test.cc	/^  ~FaultInjectionTestEnv() override = default;$/;"	m	class:leveldb::FaultInjectionTestEnv	file:
+override	fault_injection_test.cc	/^  ~TestWritableFile() override;$/;"	m	class:leveldb::TestWritableFile	file:
+override	memtable.cc	/^  ~MemTableIterator() override = default;$/;"	m	class:leveldb::MemTableIterator	file:
+owned_	db_test.cc	/^    const bool owned_;  \/\/ Do we own map_$/;"	m	class:leveldb::ModelDB::ModelIter	file:
+owns_cache_	db_impl.h	/^  const bool owns_cache_;$/;"	m	class:leveldb::DBImpl
+owns_cache_	repair.cc	/^  bool owns_cache_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+owns_info_log_	db_impl.h	/^  const bool owns_info_log_;$/;"	m	class:leveldb::DBImpl
+owns_info_log_	repair.cc	/^  bool owns_info_log_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+phase	c_test.c	/^const char* phase = "";$/;"	v
+pos_	fault_injection_test.cc	/^  int64_t pos_;$/;"	m	struct:leveldb::__anon10::FileState	file:
+pos_at_last_flush_	fault_injection_test.cc	/^  int64_t pos_at_last_flush_;$/;"	m	struct:leveldb::__anon10::FileState	file:
+pos_at_last_sync_	fault_injection_test.cc	/^  int64_t pos_at_last_sync_;$/;"	m	struct:leveldb::__anon10::FileState	file:
+prev_	snapshot.h	/^  SnapshotImpl* prev_;$/;"	m	class:leveldb::SnapshotImpl
+prev_	version_set.h	/^  Version* prev_;     \/\/ Previous version in linked list$/;"	m	class:leveldb::Version
+prev_log_number_	version_edit.h	/^  uint64_t prev_log_number_;$/;"	m	class:leveldb::VersionEdit
+prev_log_number_	version_set.h	/^  uint64_t prev_log_number_;  \/\/ 0 or backing store for memtable being compacted$/;"	m	class:leveldb::VersionSet
+quit_flag_	skiplist_test.cc	/^  std::atomic<bool> quit_flag_;$/;"	m	class:leveldb::TestState	file:
+random_read_counter_	db_test.cc	/^  AtomicCounter random_read_counter_;$/;"	m	class:leveldb::SpecialEnv	file:
+reader_	log_test.cc	/^  Reader* reader_;$/;"	m	class:leveldb::log::LogTest	file:
+reading_	log_test.cc	/^  bool reading_;$/;"	m	class:leveldb::log::LogTest	file:
+refs	version_edit.h	/^  int refs;$/;"	m	struct:leveldb::FileMetaData
+refs_	memtable.h	/^  int refs_;$/;"	m	class:leveldb::MemTable
+refs_	version_set.h	/^  int refs_;          \/\/ Number of live refs to this version$/;"	m	class:leveldb::Version
+rep	c.cc	/^  Cache* rep;$/;"	m	struct:leveldb_cache_t	file:
+rep	c.cc	/^  DB* rep;$/;"	m	struct:leveldb_t	file:
+rep	c.cc	/^  Env* rep;$/;"	m	struct:leveldb_env_t	file:
+rep	c.cc	/^  FileLock* rep;$/;"	m	struct:leveldb_filelock_t	file:
+rep	c.cc	/^  Iterator* rep;$/;"	m	struct:leveldb_iterator_t	file:
+rep	c.cc	/^  Logger* rep;$/;"	m	struct:leveldb_logger_t	file:
+rep	c.cc	/^  Options rep;$/;"	m	struct:leveldb_options_t	file:
+rep	c.cc	/^  RandomAccessFile* rep;$/;"	m	struct:leveldb_randomfile_t	file:
+rep	c.cc	/^  ReadOptions rep;$/;"	m	struct:leveldb_readoptions_t	file:
+rep	c.cc	/^  SequentialFile* rep;$/;"	m	struct:leveldb_seqfile_t	file:
+rep	c.cc	/^  WritableFile* rep;$/;"	m	struct:leveldb_writablefile_t	file:
+rep	c.cc	/^  WriteBatch rep;$/;"	m	struct:leveldb_writebatch_t	file:
+rep	c.cc	/^  WriteOptions rep;$/;"	m	struct:leveldb_writeoptions_t	file:
+rep	c.cc	/^  const Snapshot* rep;$/;"	m	struct:leveldb_snapshot_t	file:
+rep_	dbformat.h	/^  std::string rep_;$/;"	m	class:leveldb::InternalKey
+report_	log_test.cc	/^  ReportCollector report_;$/;"	m	class:leveldb::log::LogTest	file:
+reporter_	log_reader.h	/^  Reporter* const reporter_;$/;"	m	class:leveldb::log::Reader
+resyncing_	log_reader.h	/^  bool resyncing_;$/;"	m	class:leveldb::log::Reader
+returned_partial_	log_test.cc	/^    bool returned_partial_;$/;"	m	class:leveldb::log::LogTest::StringSource	file:
+rnd_	db_iter.cc	/^  Random rnd_;$/;"	m	class:leveldb::__anon8::DBIter	file:
+rnd_	skiplist.h	/^  Random rnd_;$/;"	m	class:leveldb::SkipList
+saved_key_	db_iter.cc	/^  std::string saved_key_;    \/\/ == current key when direction_==kReverse$/;"	m	class:leveldb::__anon8::DBIter	file:
+saved_value_	db_iter.cc	/^  std::string saved_value_;  \/\/ == current raw value when direction_==kReverse$/;"	m	class:leveldb::__anon8::DBIter	file:
+seed_	skiplist_test.cc	/^  int seed_;$/;"	m	class:leveldb::TestState	file:
+seek_file	version_set.h	/^    FileMetaData* seek_file;$/;"	m	struct:leveldb::Version::GetStats
+seek_file_level	version_set.h	/^    int seek_file_level;$/;"	m	struct:leveldb::Version::GetStats
+seen_key_	version_set.h	/^  bool seen_key_;             \/\/ Some output key has been seen$/;"	m	class:leveldb::Compaction
+sequence	dbformat.h	/^  SequenceNumber sequence;$/;"	m	struct:leveldb::ParsedInternalKey
+sequence_	db_iter.cc	/^  SequenceNumber const sequence_;$/;"	m	class:leveldb::__anon8::DBIter	file:
+sequence_	write_batch.cc	/^  SequenceNumber sequence_;$/;"	m	class:leveldb::__anon6::MemTableInserter	file:
+sequence_number	snapshot.h	/^  SequenceNumber sequence_number() const { return sequence_number_; }$/;"	f	class:leveldb::SnapshotImpl
+sequence_number_	snapshot.h	/^  const SequenceNumber sequence_number_;$/;"	m	class:leveldb::SnapshotImpl
+shutting_down_	db_impl.h	/^  std::atomic<bool> shutting_down_;$/;"	m	class:leveldb::DBImpl
+smallest	db_impl.cc	/^    InternalKey smallest, largest;$/;"	m	struct:leveldb::DBImpl::CompactionState::Output	file:
+smallest	version_edit.h	/^  InternalKey smallest;  \/\/ Smallest internal key served by table$/;"	m	struct:leveldb::FileMetaData
+smallest_snapshot	db_impl.cc	/^  SequenceNumber smallest_snapshot;$/;"	m	struct:leveldb::DBImpl::CompactionState	file:
+source_	log_test.cc	/^  StringSource source_;$/;"	m	class:leveldb::log::LogTest	file:
+space_	dbformat.h	/^  char space_[200];  \/\/ Avoid allocation for short keys$/;"	m	class:leveldb::LookupKey
+start_	dbformat.h	/^  const char* start_;$/;"	m	class:leveldb::LookupKey
+state	db_test.cc	/^  MTState* state;$/;"	m	struct:leveldb::__anon12::MTThread	file:
+state	version_set.cc	/^  SaverState state;$/;"	m	struct:leveldb::__anon2::Saver	file:
+state_	c.cc	/^  void* state_;$/;"	m	struct:leveldb_comparator_t	file:
+state_	c.cc	/^  void* state_;$/;"	m	struct:leveldb_filterpolicy_t	file:
+state_	fault_injection_test.cc	/^  FileState state_;$/;"	m	class:leveldb::TestWritableFile	file:
+status	db_impl.cc	/^  Status status;$/;"	m	struct:leveldb::DBImpl::Writer	file:
+status_	db_iter.cc	/^  Status status_;$/;"	m	class:leveldb::__anon8::DBIter	file:
+stop	db_test.cc	/^  std::atomic<bool> stop;$/;"	m	struct:leveldb::__anon12::MTState	file:
+sync	db_impl.cc	/^  bool sync;$/;"	m	struct:leveldb::DBImpl::Writer	file:
+t_	skiplist_test.cc	/^  ConcurrentTest t_;$/;"	m	class:leveldb::TestState	file:
+table	table_cache.cc	/^  Table* table;$/;"	m	struct:leveldb::TableAndFile	file:
+table_	memtable.h	/^  Table table_;$/;"	m	class:leveldb::MemTable
+table_cache_	db_impl.h	/^  TableCache* const table_cache_;$/;"	m	class:leveldb::DBImpl
+table_cache_	repair.cc	/^  TableCache* table_cache_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+table_cache_	version_set.h	/^  TableCache* const table_cache_;$/;"	m	class:leveldb::VersionSet
+table_numbers_	repair.cc	/^  std::vector<uint64_t> table_numbers_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+tables_	repair.cc	/^  std::vector<TableInfo> tables_;$/;"	m	class:leveldb::__anon7::Repairer	file:
+target_	fault_injection_test.cc	/^  WritableFile* target_;$/;"	m	class:leveldb::TestWritableFile	file:
+test	db_test.cc	/^  DBTest* test;$/;"	m	struct:leveldb::__anon12::MTState	file:
+thread_done	db_test.cc	/^  std::atomic<bool> thread_done[kNumThreads];$/;"	m	struct:leveldb::__anon12::MTState	file:
+tiny_cache_	autocompact_test.cc	/^  Cache* tiny_cache_;$/;"	m	class:leveldb::AutoCompactTest	file:
+tiny_cache_	corruption_test.cc	/^  Cache* tiny_cache_;$/;"	m	class:leveldb::CorruptionTest	file:
+tiny_cache_	fault_injection_test.cc	/^  Cache* tiny_cache_;$/;"	m	class:leveldb::FaultInjectionTest	file:
+tmp_	memtable.cc	/^  std::string tmp_;  \/\/ For passing to EncodeKey$/;"	m	class:leveldb::MemTableIterator	file:
+tmp_storage	db_impl.h	/^    InternalKey tmp_storage;   \/\/ Used to keep track of compaction progress$/;"	m	struct:leveldb::DBImpl::ManualCompaction
+total_bytes	db_impl.cc	/^  uint64_t total_bytes;$/;"	m	struct:leveldb::DBImpl::CompactionState	file:
+type	dbformat.h	/^  ValueType type;$/;"	m	struct:leveldb::ParsedInternalKey
+type_crc_	log_writer.h	/^  uint32_t type_crc_[kMaxRecordType + 1];$/;"	m	class:leveldb::log::Writer
+ucmp	version_set.cc	/^  const Comparator* ucmp;$/;"	m	struct:leveldb::__anon2::Saver	file:
+user_comparator	db_impl.h	/^  const Comparator* user_comparator() const {$/;"	f	class:leveldb::DBImpl
+user_comparator	dbformat.h	/^  const Comparator* user_comparator() const { return user_comparator_; }$/;"	f	class:leveldb::InternalKeyComparator
+user_comparator_	db_iter.cc	/^  const Comparator* const user_comparator_;$/;"	m	class:leveldb::__anon8::DBIter	file:
+user_comparator_	dbformat.h	/^  const Comparator* user_comparator_;$/;"	m	class:leveldb::InternalKeyComparator
+user_key	dbformat.h	/^  Slice user_key() const { return ExtractUserKey(rep_); }$/;"	f	class:leveldb::InternalKey
+user_key	dbformat.h	/^  Slice user_key() const { return Slice(kstart_, end_ - kstart_ - 8); }$/;"	f	class:leveldb::LookupKey
+user_key	dbformat.h	/^  Slice user_key;$/;"	m	struct:leveldb::ParsedInternalKey
+user_key	version_set.cc	/^  Slice user_key;$/;"	m	struct:leveldb::__anon2::Saver	file:
+user_policy_	dbformat.h	/^  const FilterPolicy* const user_policy_;$/;"	m	class:leveldb::InternalFilterPolicy
+valid_	db_iter.cc	/^  bool valid_;$/;"	m	class:leveldb::__anon8::DBIter	file:
+value	version_set.cc	/^  std::string* value;$/;"	m	struct:leveldb::__anon2::Saver	file:
+value_buf_	version_set.cc	/^  mutable char value_buf_[16];$/;"	m	class:leveldb::Version::LevelFileNumIterator	file:
+vset_	version_set.cc	/^  VersionSet* vset_;$/;"	m	class:leveldb::VersionSet::Builder	file:
+vset_	version_set.h	/^  VersionSet* vset_;  \/\/ VersionSet to which this Version belongs$/;"	m	class:leveldb::Version
+writable_file_opened_	fault_injection_test.cc	/^  bool writable_file_opened_;$/;"	m	class:leveldb::TestWritableFile	file:
+writer_	log_test.cc	/^  Writer* writer_;$/;"	m	class:leveldb::log::LogTest	file:
+~AddBoundaryInputsTest	version_set_test.cc	/^  ~AddBoundaryInputsTest() {$/;"	f	class:leveldb::AddBoundaryInputsTest
+~AutoCompactTest	autocompact_test.cc	/^  ~AutoCompactTest() {$/;"	f	class:leveldb::AutoCompactTest
+~Builder	version_set.cc	/^  ~Builder() {$/;"	f	class:leveldb::VersionSet::Builder
+~Compaction	version_set.cc	/^Compaction::~Compaction() {$/;"	f	class:leveldb::Compaction
+~CorruptionTest	corruption_test.cc	/^  ~CorruptionTest() {$/;"	f	class:leveldb::CorruptionTest
+~DBImpl	db_impl.cc	/^DBImpl::~DBImpl() {$/;"	f	class:leveldb::DBImpl
+~DBTest	db_test.cc	/^  ~DBTest() {$/;"	f	class:leveldb::DBTest
+~FaultInjectionTest	fault_injection_test.cc	/^  ~FaultInjectionTest() {$/;"	f	class:leveldb::FaultInjectionTest
+~FindFileTest	version_set_test.cc	/^  ~FindFileTest() {$/;"	f	class:leveldb::FindFileTest
+~LogTest	log_test.cc	/^  ~LogTest() {$/;"	f	class:leveldb::log::LogTest
+~LookupKey	dbformat.h	/^inline LookupKey::~LookupKey() {$/;"	f	class:leveldb::LookupKey
+~MemTable	memtable.cc	/^MemTable::~MemTable() { assert(refs_ == 0); }$/;"	f	class:leveldb::MemTable
+~Reader	log_reader.cc	/^Reader::~Reader() { delete[] backing_store_; }$/;"	f	class:leveldb::log::Reader
+~RecoveryTest	recovery_test.cc	/^  ~RecoveryTest() {$/;"	f	class:leveldb::RecoveryTest
+~Repairer	repair.cc	/^  ~Repairer() {$/;"	f	class:leveldb::__anon7::Repairer
+~TableCache	table_cache.cc	/^TableCache::~TableCache() { delete cache_; }$/;"	f	class:leveldb::TableCache
+~TestWritableFile	fault_injection_test.cc	/^TestWritableFile::~TestWritableFile() {$/;"	f	class:leveldb::TestWritableFile
+~Version	version_set.cc	/^Version::~Version() {$/;"	f	class:leveldb::Version
+~VersionSet	version_set.cc	/^VersionSet::~VersionSet() {$/;"	f	class:leveldb::VersionSet
